@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E828B7BC-45C2-8AEC-23A8-AA88C5D94F88" name="Pais">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-10 19:27:55 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pais" id="C98174C2-E208-3FCF-5560-2A29477C231C">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:22:18 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="FD42FA28-75E0-FBBB-3172-A662EC2A127C">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:22:34 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_region" id="435FB82D-9901-6A28-97C7-DBC75438A58C">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 13:38:37 UTC</createdTime>
+<generatorID>69D29432-E048-508C-137C-468F6614B25F</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<referedAttribute>97A80B61-C480-F4A0-C207-5AAC4F368609</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="92EF1717-F0F4-FC17-ECAE-9942599DBAD9" name="Pais PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:22:31 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C98174C2-E208-3FCF-5560-2A29477C231C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4F22A639-9A2F-09AE-1FF1-80719E2E13DA" name="Region">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-10 19:15:29 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_region" id="97A80B61-C480-F4A0-C207-5AAC4F368609">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-10 19:34:53 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="D3B117CE-6F30-ADE8-13FD-EB72250854C8">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:21:02 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="12109E08-A9F5-809C-6E80-66E332C41C1F" name="Region PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:20:59 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>97A80B61-C480-F4A0-C207-5AAC4F368609</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

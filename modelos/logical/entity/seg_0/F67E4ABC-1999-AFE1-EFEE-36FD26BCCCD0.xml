@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F67E4ABC-1999-AFE1-EFEE-36FD26BCCCD0" name="Trabajador">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-10 19:31:28 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_trabajador" id="D3146A30-FD3B-BCA0-0B28-38D1DFD45C5B">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:24:26 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="E0BC98BD-E8D9-D66C-989B-8FC897700C9E">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:24:39 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usuario" id="0BE538C5-F0E5-5A2F-B0FB-5D7500FDEEB7">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 01:12:17 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="password" id="DD02A660-5544-6F6F-BA8D-259306EBAA08">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 01:20:26 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_ini" id="3AFEC5B5-5977-F0B3-3E55-DF41079688CA">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 01:27:23 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo" id="12290841-D5EB-11A2-7D0D-24005245EB25">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 01:30:41 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo_jefe" id="9E34B596-1AA9-0438-4A3A-9307B56BD918">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 01:31:12 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="58D96237-EB9C-4B12-D053-971EC0D4E8D4" name="Trabajador PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:24:36 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D3146A30-FD3B-BCA0-0B28-38D1DFD45C5B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8658CCEB-5A7E-F468-65DE-08A7BB60E3C3" name="Key_2">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 01:13:59 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<newElementsIDs>0BE538C5-F0E5-5A2F-B0FB-5D7500FDEEB7</newElementsIDs>
+<usedAttributes>
+<attributeRef>0BE538C5-F0E5-5A2F-B0FB-5D7500FDEEB7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

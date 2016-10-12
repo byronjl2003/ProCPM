@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0C27086F-CCF8-6174-41F3-C41C34FABE5E" name="Patente">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-10 19:27:37 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_patente" id="66259336-4806-755D-B9F5-1B83BBE0C0E8">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:51:04 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_invento" id="5845EF13-77B8-265D-A07D-4C1C7B06AB91">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:50:21 UTC</createdTime>
+<generatorID>F9D2C9B2-58E0-5BBF-0410-B39AB927F6BD</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<referedAttribute>B5890F8F-E971-292A-4FE6-C9012685EE82</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pais" id="B7A7432C-F7CB-6D58-3E98-B8ADE0E841FB">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:50:55 UTC</createdTime>
+<generatorID>8D515AF3-023C-7E7F-5D3F-728269C377E5</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<referedAttribute>C98174C2-E208-3FCF-5560-2A29477C231C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="92BB3DEB-A4C6-616E-3067-3E61A7AB64C2" name="Patente PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:50:55 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B7A7432C-F7CB-6D58-3E98-B8ADE0E841FB</attributeRef>
+<attributeRef>66259336-4806-755D-B9F5-1B83BBE0C0E8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_5" directorySegmentName="seg_0" id="2AA3C2ED-2AB7-8E0D-F8B2-148780E601B9">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:33:16 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<sourcePk>F5BBE60F-6BA9-DFF0-713B-86A22CBA9A97</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>775CA515-B5F2-EE54-1963-53BAD60BF6A3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>46259668-1C91-4552-1833-40B452856F17</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
