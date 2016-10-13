@@ -3,12 +3,16 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:30:08 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<targetPk>12109E08-A9F5-809C-6E80-66E332C41C1F</targetPk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>true</optionalTarget>
 <sourceCardinality>*</sourceCardinality>
 <sourceEntity>4F22A639-9A2F-09AE-1FF1-80719E2E13DA</sourceEntity>
-<targetCardinalityString>*</targetCardinalityString>
+<targetCardinalityString>1</targetCardinalityString>
 <targetEntity>4F22A639-9A2F-09AE-1FF1-80719E2E13DA</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>

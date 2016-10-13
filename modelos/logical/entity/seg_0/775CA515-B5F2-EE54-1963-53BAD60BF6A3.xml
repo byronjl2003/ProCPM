@@ -3,6 +3,9 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-10 19:28:08 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,6 +19,9 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:22:56 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT018</logicalDatatype>
@@ -25,6 +31,9 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:23:34 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -35,6 +44,9 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:23:49 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -47,6 +59,9 @@
 <createdTime>2016-10-11 05:52:40 UTC</createdTime>
 <generatorID>CBB5F72F-E251-5DBA-BB49-839161547C87</generatorID>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <referedAttribute>D3146A30-FD3B-BCA0-0B28-38D1DFD45C5B</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,6 +74,10 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:23:27 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="false"/>
+</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>4B3894F6-D274-3FB4-08E3-7E35DEA74FFE</attributeRef>

@@ -3,6 +3,9 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-10 19:27:46 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,6 +19,9 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:49:43 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT018</logicalDatatype>
@@ -25,22 +31,41 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:50:01 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_pais" id="00EBD831-77D1-1ED0-C4A8-16F0967B4CF2">
+<Attribute name="id_pais" id="E7C9FD09-90A8-7660-BF1C-9B6DAD63CD5F">
 <createdBy>byron</createdBy>
-<createdTime>2016-10-12 01:57:33 UTC</createdTime>
-<generatorID>188B01E5-AD76-81F1-4228-D8882D40775E</generatorID>
+<createdTime>2016-10-12 06:52:09 UTC</createdTime>
+<generatorID>A54FD448-B351-D5A3-368E-6000E9CEEB26</generatorID>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <referedAttribute>C98174C2-E208-3FCF-5560-2A29477C231C</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT018</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="82758C6F-E2D1-EE42-7377-12497577893C">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 19:26:22 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -48,6 +73,10 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:49:59 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="false"/>
+</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>B5890F8F-E971-292A-4FE6-C9012685EE82</attributeRef>

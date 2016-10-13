@@ -3,6 +3,9 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-10 19:31:54 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -17,6 +20,9 @@
 <createdTime>2016-10-11 05:50:33 UTC</createdTime>
 <generatorID>7A9B0F88-366A-AD26-C2A7-F95CF23D7258</generatorID>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <referedAttribute>0BAB4C7A-AA3E-8490-933B-ED4B5D58ADEC</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -28,6 +34,9 @@
 <createdTime>2016-10-11 05:50:40 UTC</createdTime>
 <generatorID>AC8668A6-388D-E471-2F56-449B44365A5B</generatorID>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <referedAttribute>B5890F8F-E971-292A-4FE6-C9012685EE82</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

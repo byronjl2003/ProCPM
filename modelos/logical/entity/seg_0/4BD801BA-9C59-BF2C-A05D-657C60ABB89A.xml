@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4BD801BA-9C59-BF2C-A05D-657C60ABB89A" name="AsigInvento">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 05:12:10 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_invento" id="941C4827-3247-DB71-84BA-3DC950265EFE">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 05:19:36 UTC</createdTime>
+<generatorID>BF6B43D3-4AFC-77D8-ED3C-607E1E15C115</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<referedAttribute>B5890F8F-E971-292A-4FE6-C9012685EE82</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_trabajador" id="88036995-1948-DF37-9617-766608DCC395">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 05:19:48 UTC</createdTime>
+<generatorID>FD3BFD33-A5AE-BCB4-F25F-2441852CDEDB</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<referedAttribute>D3146A30-FD3B-BCA0-0B28-38D1DFD45C5B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

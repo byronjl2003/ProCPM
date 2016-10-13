@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0DFD45E7-72DC-6B5E-CC8C-F9CC5822AD30" name="Area">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>775CA515-B5F2-EE54-1963-53BAD60BF6A3</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_area" id="ED7C6674-0DCF-B4A6-B6EA-1515E5E83718">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>4B3894F6-D274-3FB4-08E3-7E35DEA74FFE</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="1696A972-7999-CE0F-70ED-2959163CFC4B">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>21C6602D-298D-C6F2-0045-92D164FE9FC3</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="A5B57C80-5B7F-F0B3-0542-E535663FD0E8">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>EE8AC5C8-41AD-8B74-B8DA-EAA7CC72BACC</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_trabajador" id="641BAB3B-16A9-2F6B-B5EC-BAC5E74009FE">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>03BDBB64-FAE0-F627-1067-8275C96CAC72</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7BE4DED9-4D63-7D49-5561-01A93E4B76E4" referredColumn="F53FC1CF-F98F-C2E4-C800-C64D3EC0367F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7DF6219-784F-4CFE-12A6-3DB4E47451A2" name="Area_PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>F5BBE60F-6BA9-DFF0-713B-86A22CBA9A97</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED7C6674-0DCF-B4A6-B6EA-1515E5E83718"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C56A2B8-D8F1-F26A-D5E2-CDCE5985FD1D" name="Area__IDX">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>CBB5F72F-E251-5DBA-BB49-839161547C87</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="641BAB3B-16A9-2F6B-B5EC-BAC5E74009FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19B34535-BA0E-A46A-4D27-A159EA69DA17" name="Area_Trabajador_FK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>CBB5F72F-E251-5DBA-BB49-839161547C87</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="641BAB3B-16A9-2F6B-B5EC-BAC5E74009FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

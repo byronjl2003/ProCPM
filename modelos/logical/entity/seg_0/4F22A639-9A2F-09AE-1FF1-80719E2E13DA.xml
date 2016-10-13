@@ -3,6 +3,9 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-10 19:15:29 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,6 +19,9 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-10 19:34:53 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -25,11 +31,29 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:21:02 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>80</dataTypeSize>
 <ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_region1" id="8CE4BEAB-E3E8-3DFC-FF4F-07B048910F26">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 19:10:48 UTC</createdTime>
+<generatorID>EF21F543-9D2A-3430-7E4E-C85D8BDEA821</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>97A80B61-C480-F4A0-C207-5AAC4F368609</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -37,6 +61,10 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:20:59 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="false"/>
+</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>97A80B61-C480-F4A0-C207-5AAC4F368609</attributeRef>

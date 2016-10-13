@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0B5DE77E-7F8F-7FA7-F9DC-57DCADA67D6E" containerWithKeyObject="A481745B-1ACD-BEE3-DBB8-98703DD38AC7" localFKIndex="CA9483D3-7C5E-0123-D5B6-6549595448C8" name="Inventor_Pais_FK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>5D2FADC9-EFBE-4CB5-DE93-18CD9415A5EB</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>EEF840E2-B807-5CEC-0EDA-C27D781040B3</referredTableID>
+<keyObject>AC74F99A-DD27-2C03-97B4-3F8E2CC9F21F</keyObject>
+<referredKeyID>AC74F99A-DD27-2C03-97B4-3F8E2CC9F21F</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

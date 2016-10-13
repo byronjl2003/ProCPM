@@ -3,6 +3,9 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-10 19:31:28 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,6 +19,9 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:24:26 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT018</logicalDatatype>
@@ -25,58 +31,78 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:24:39 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="usuario" id="0BE538C5-F0E5-5A2F-B0FB-5D7500FDEEB7">
-<createdBy>byron</createdBy>
-<createdTime>2016-10-12 01:12:17 UTC</createdTime>
-<ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="password" id="DD02A660-5544-6F6F-BA8D-259306EBAA08">
+<Attribute name="usuario" id="5FB8937E-84FD-A12D-E6EE-9520982EF1A7">
 <createdBy>byron</createdBy>
-<createdTime>2016-10-12 01:20:26 UTC</createdTime>
+<createdTime>2016-10-12 19:13:31 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>15</dataTypeSize>
-<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="fecha_ini" id="3AFEC5B5-5977-F0B3-3E55-DF41079688CA">
+<Attribute name="passwotd" id="F08EF5E7-3D79-B3B8-A2B7-D5AB47C9B995">
 <createdBy>byron</createdBy>
-<createdTime>2016-10-12 01:27:23 UTC</createdTime>
+<createdTime>2016-10-12 19:14:58 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_ini" id="EAB2499A-F40D-B8A0-647D-B662AD663E08">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 19:15:41 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Tipo" id="12290841-D5EB-11A2-7D0D-24005245EB25">
+<Attribute name="tipo" id="FE186654-3DFD-EAA0-5D89-09F8DA1DFAF2">
 <createdBy>byron</createdBy>
-<createdTime>2016-10-12 01:30:41 UTC</createdTime>
+<createdTime>2016-10-12 19:16:04 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Tipo_jefe" id="9E34B596-1AA9-0438-4A3A-9307B56BD918">
+<Attribute name="tipe_jefe" id="13C6F5A6-9410-01F1-5BC5-B72E3007C083">
 <createdBy>byron</createdBy>
-<createdTime>2016-10-12 01:31:12 UTC</createdTime>
+<createdTime>2016-10-12 19:16:31 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -84,18 +110,13 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:24:36 UTC</createdTime>
 <ownerDesignName>modelos</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="false"/>
+</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>D3146A30-FD3B-BCA0-0B28-38D1DFD45C5B</attributeRef>
-</usedAttributes>
-</identifier>
-<identifier id="8658CCEB-5A7E-F468-65DE-08A7BB60E3C3" name="Key_2">
-<createdBy>byron</createdBy>
-<createdTime>2016-10-12 01:13:59 UTC</createdTime>
-<ownerDesignName>modelos</ownerDesignName>
-<newElementsIDs>0BE538C5-F0E5-5A2F-B0FB-5D7500FDEEB7</newElementsIDs>
-<usedAttributes>
-<attributeRef>0BE538C5-F0E5-5A2F-B0FB-5D7500FDEEB7</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

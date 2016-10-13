@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB81002E-1F3D-A144-8C62-F7ED66FED56A" name="Frontera">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<ordsAlias>relation_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pais" id="865D0714-B1E7-A760-0932-D390A5B9EAB7">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B601F965-B8DD-8F20-B984-3582001454CE" referredColumn="664C46B7-5802-9E92-A440-6C1CC71BDF21"/>
+</associations>
+</Column>
+<Column name="id_pais2" id="3F41B472-5095-F42B-A3CC-CB9BAF63B4E4">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7297BE8E-2300-3756-F0A6-831D2E6D3D95" referredColumn="664C46B7-5802-9E92-A440-6C1CC71BDF21"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E60A8771-58F6-7A99-AC09-4AB2181D622F" name="Relation_2_PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="865D0714-B1E7-A760-0932-D390A5B9EAB7"/>
+<colUsage columnID="3F41B472-5095-F42B-A3CC-CB9BAF63B4E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21654E6B-5A32-3327-490C-77F585D645D2" name="FK_ASS_9">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>0EEA63A8-4B9E-D585-CE23-7C6478696D54</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="865D0714-B1E7-A760-0932-D390A5B9EAB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9607F7A-B235-6816-D920-1566CF02A041" name="FK_ASS_10">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>0EEA63A8-4B9E-D585-CE23-7C6478696D54</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F41B472-5095-F42B-A3CC-CB9BAF63B4E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

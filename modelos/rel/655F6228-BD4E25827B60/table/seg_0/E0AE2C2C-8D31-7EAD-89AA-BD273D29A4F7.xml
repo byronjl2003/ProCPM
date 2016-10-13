@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0AE2C2C-8D31-7EAD-89AA-BD273D29A4F7" name="Invento">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>4E54274E-7EF8-9428-A8F6-80FCEC1A45FD</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_invento" id="72AB6B24-D268-B4A4-BF0A-DFE4CD6EB6C0">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>B5890F8F-E971-292A-4FE6-C9012685EE82</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="2C845040-B70D-4087-723C-50924149CB9A">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>7DE1ABEE-A7A8-C4FE-78EC-023E9E14B76B</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_pais" id="2AD4129E-6A6C-60E1-01DE-60710572A6A4">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>E7C9FD09-90A8-7660-BF1C-9B6DAD63CD5F</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="966D6675-FD15-01A9-271E-D7B166494908" referredColumn="664C46B7-5802-9E92-A440-6C1CC71BDF21"/>
+</associations>
+</Column>
+<Column name="estado" id="690C0A22-0E8F-DC1F-D8E6-7FAD99D6F236">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 19:31:30 UTC</createdTime>
+<generatorID>82758C6F-E2D1-EE42-7377-12497577893C</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0E0A1A5-FA6C-C37A-566F-A21805C45F5E" name="Invento_PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>7D174DC9-22C7-80E7-A531-16B8037EE910</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72AB6B24-D268-B4A4-BF0A-DFE4CD6EB6C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85B1E335-8419-80E7-427B-DA4363F8E865" name="Invento_Pais_FK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 06:55:48 UTC</createdTime>
+<generatorID>A54FD448-B351-D5A3-368E-6000E9CEEB26</generatorID>
+<ownerDesignName>modelos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AD4129E-6A6C-60E1-01DE-60710572A6A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
