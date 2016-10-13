@@ -11,11 +11,11 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="index.jsp">Inicio</a></li>
-                <li><a href="reg.jsp">Registrarse</a></li>
-                <li><a href="login.jsp">Iniciar Sesion</a></li>
-                <li><a href="apostar.jsp">Apostar</a></li>
-                <li><a href="about.jsp">Acerca de</a></li>
+                <li><a href="index.jsp"><span class="fa fa-2x fa-home"></span> Inicio</a></li>
+                <li><a href="reg.jsp"><span class="fa fa-2x fa-user"></span> Registrarse</a></li>
+                <li><a href="login.jsp"><span class="fa fa-2x fa-sign-in"></span> Iniciar Sesion</a></li>
+                <li><a href="apostar.jsp"><span class="fa fa-2x fa-money"></span> Apostar</a></li>
+                <li><a href="about.jsp"><span class="fa fa-2x fa-question-circle"></span> Acerca de</a></li>
             </ul>
         </div>
     </div>

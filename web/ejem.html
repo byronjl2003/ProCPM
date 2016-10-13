@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+    <meta charset="utf-8"/>
+    <title>Validación de Formularios</title>
+    <script src="bootstrap/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="extraStyle.css">
+    <script>
+        //Expresión para validar un correo electrónico
+        var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+        //Expresión para validar edad de 18 a 60 años
+        var expr2 = /^1[8-9]|[2-5]\d|60$/;
+        $(document).ready(function(){
+            //función click
+            $("#bEnviar").click(function(){
+                //Guardar en variables el valor que tengan las cajas de texto
+                //Por medio de los id's
+                //Y tener mejor manipulación de dichos valores
+                var nombre = $("#itNombre").val();
+                var correo = $("#itMail").val();
+                var asunto = $("#itAsunto").val();
+                var edad = $("#itEdad").val();
+ 
+                // --- Condicionales anidados ----
+                //Si nombre está vacío
+                //Muestra el mensaje
+                //Con false sale de los if's y espera a que sea pulsado de nuevo el botón de enviar
+                if(nombre === ""){
+                    $("#mensaje1").fadeIn("slow");
+                    return false;
+                }
+                //en otro caso, el mensaje no se muestra
+                else{
+                    $("#mensaje1").fadeOut();
+ 
+                    //Si correo está vacío y la expresión NO corresponde -test es función de JQuery
+                    //Muestra el mensaje
+                    //Con false sale de los if's y espera a que sea pulsado de nuevo el botón de enviar
+                    if(correo === "" || !expr.test(correo)){
+                        $("#mensaje2").fadeIn("slow");
+                        return false;
+                    }
+                    else{
+                        $("#mensaje2").fadeOut();
+ 
+                        if(asunto === ""){
+                            $("#mensaje3").fadeIn("slow");
+                            return false;
+                        }
+                        else{
+                            $("#mensaje3").fadeOut();
+ 
+                            if(edad === "" || !expr2.test(edad)){
+                                $("#mensaje4").fadeIn("slow");
+                                return false;
+                            }
+                        }
+                    }
+                }
+ 
+            });//click
+        });//ready
+    </script>
+ 
+</head>
+ 
+    <body>
+        <div id="contenedor">
+            <form id="miFormulario" method="GET">
+ 
+                <label>Nombre:</label><br />
+                <input type="text" id="itNombre" class="campo" /> <br/>
+                <div id="mensaje1" class="errores"> Dame tu nombre</div>
+ 
+                <label>E-mail:</label><br />
+                <input type="email" id="itMail" class="campo" /> <br/>
+                <div id="mensaje2" class="errores"> Dame un mail correcto</div>
+ 
+                <label>Asunto:</label><br />
+                <input type="text" id="itAsunto" class="campo" /> <br/>
+                <div id="mensaje3" class="errores"> Agrega un asunto</div>
+ 
+                <label>Edad:</label><br />
+                <input type="text" id="itEdad" class="campo" /> <br/>
+                <div id="mensaje4" class="errores"> -Edad entre 18 a 60 <br/> -Sólo números</div>
+ 
+                <center>
+                <input type="submit" id="bEnviar" value="Enviar datos" class="boton" />
+                </center>
+            </form>
+ 
+        </div>
+ 
+    </body>
+ 
+</html>

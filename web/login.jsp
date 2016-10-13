@@ -18,7 +18,7 @@
         <div role="main" class="container theme-showcase">
             <br>
             <div class="jumbotron">
-                <h2>Iniciar Sesion</h2>
+                <h2><span class="fa fa-3x fa-sign-in"></span> Iniciar Sesion</h2>
                 Para poder realizar su Quiniela debe de identificarse<br>
                 ingrese los datos solicitados
                 <form method="post" action="/Apuestas/LoginUser" >
