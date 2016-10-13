@@ -7,11 +7,15 @@ and open the template in the editor.
     Created on : 13/10/2016, 12:10:57 AM
     Author     : wxjoy
 */
-
-body{
-            background: #333;
-            padding-top: 40px;
-        }
+@charset 'UTF-8';
+@font-face{
+    font-family: 'Pacifico';
+    src:url('font/Pacifico.ttf');
+}
+@font-face{
+    font-family: 'Starjedi';
+    src:url('font/Starjedi.ttf')
+}
         #contenedor{
             -webkit-border-radius: 10px;
             -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -59,4 +63,9 @@ body{
             margin-left: 180px;
             padding: 10px;
             position: absolute;
+        }
+        
+        #logo{
+            font-family: Starjedi;
+            font-size: 26px;
         }
