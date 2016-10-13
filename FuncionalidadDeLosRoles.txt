@@ -1,0 +1,30 @@
+-------------------------ADMIN------------------------
+	
+	-Creacion de Paises y sus fronteras
+	-Creacion de Regiones
+	-Creacion de representantes
+	
+	
+
+
+
+	-Cracion de Trabajadores
+	-Creacion de Areas de Investigacion(nombre,descripcion y su jefe).
+	
+	-Asignacion del jefe de todas las Areas
+	-Asignarle areas a los trabajadores
+	-Asignarle inventos a los trabajadores		
+	
+	
+	
+
+----------------------TRABAJADOR--------------------
+	
+	-Agregarle ranking a las areas que se le asigno
+	
+	-Cracion de Inventores
+	-Ingreso de Inventos y sus respectivos inventores	
+	
+	-Cambiarle el estado a patentado de los inventos asignados
+	
+	
