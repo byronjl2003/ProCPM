@@ -7,3 +7,5 @@
 <link href="../bootstrap/bootstrap-theme.css" rel="stylesheet" />
 <link href="../bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
 <link href="../bootstrap/theme.css" rel="stylesheet" />
+<link href="../fonts.css" rel="stylesheet">
+<link href="../extraStyle.css" rel="stylesheet" >

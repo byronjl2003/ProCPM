@@ -30,18 +30,38 @@ public class Login extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet Login</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet Login at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+        Object  orol;
+        char rol;
+        
+        orol = request.getSession().getAttribute("rol");
+        
+        rol = (char)orol;
+        
+        switch(rol){
+            case 'A':
+                /**si es administrador se va 
+                 * a la pagina correspondientes
+                 */
+                response.sendRedirect("/ProCPM/Admin/AInicio.jsp");
+                break;
+            case 'T':
+                /**
+                 * Si es trabajador se va a la 
+                 * de trabajadores
+                 */
+                response.sendRedirect("/ProCPM/User/TInicio.jsp");
+                break;
+            default:
+                /**
+                 * No se reconoce el rol que se ha asignado al
+                 * usuario, no se le permite entrar y se borran
+                 * sus datos de la sesion
+                 */
+                request.getSession().removeAttribute("id");
+                request.getSession().removeAttribute("nombre");
+                request.getSession().removeAttribute("rol");
+                request.getSession().setAttribute("error", "No se reconoce el rol del usuario");
+                response.sendRedirect("/ProCPM");
         }
     }
 
@@ -93,7 +113,6 @@ public class Login extends HttpServlet {
             }else{
                 request.getSession().setAttribute("error", "Credenciales invalidas");
                 response.sendRedirect("/ProCPM/login.jsp");
-                this.processRequest(request, response);
             }
         }else{
             request.getSession().setAttribute("error", "Datos invalidos");

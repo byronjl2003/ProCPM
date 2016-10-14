@@ -38,6 +38,12 @@ public class Usuario {
         }
         this.correo = correo;
     }
+
+    public Usuario(int id, String nombre, String mail) {
+        this.id = id;
+        this.nombre = nombre ;
+        this.correo= mail;
+    }
     
     public String getNombre(){
         return nombre;
@@ -72,5 +78,77 @@ public class Usuario {
         }
         
         return id;
+    }
+
+    public int cambiarClave(int codu, String cAct, String nClave) {
+        int resultado=0;
+        conexion = new Conexion();
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call cambiar_clave(?,?,?,?) }");
+            clstm.setInt(1, codu);
+            clstm.setString(2, cAct);
+            clstm.setString(3, nClave);
+            clstm.registerOutParameter(4, OracleTypes.INTEGER);
+            clstm.execute();
+            resultado = (int) clstm.getObject(4);
+        } catch (SQLException ex) {
+            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return resultado;
+    }
+    
+    public String getCorreo(){
+        return correo;
+    }
+    
+    public void cargarDatos(int codu){
+        conexion = new Conexion();
+        
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call get_d_usuario(?,?) }");
+            clstm.setInt(1, codu);
+            clstm.registerOutParameter(2, OracleTypes.CURSOR);
+            clstm.execute();
+            rset = (ResultSet) clstm.getObject(2);
+            rset.next();
+            nombre = rset.getString(1);
+            correo = rset.getString(2);
+        } catch (SQLException ex) {
+            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
+
+    public boolean isDisponible(String mail) {
+        conexion = new Conexion();
+        boolean disp= true;
+        
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call validar_correo(?,?) }");
+            clstm.setString(1, mail);
+            clstm.registerOutParameter(2, OracleTypes.CURSOR);
+            clstm.execute();
+            rset = (ResultSet) clstm.getObject(2);
+            disp = ! rset.next();
+        } catch (SQLException ex) {
+            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return disp;
+    }
+
+    public boolean cambiarDatos(String cambio) {
+        conexion = new Conexion();
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call act_d_usuario(?,?,?,?) }");
+            clstm.setInt(1, id);
+            clstm.setString(2, nombre);
+            clstm.setString(3, correo);
+            clstm.setString(4, cambio);
+            return !clstm.execute();
+        } catch (SQLException ex) {
+            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return false;
     }
 }

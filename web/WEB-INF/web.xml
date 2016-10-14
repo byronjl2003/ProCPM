@@ -8,6 +8,18 @@
         <servlet-name>Login</servlet-name>
         <servlet-class>servlet.Login</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>servlet.Logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CambiarC</servlet-name>
+        <servlet-class>servlet.CambiarC</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActDatosU</servlet-name>
+        <servlet-class>servlet.ActDatosU</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Provisional</servlet-name>
         <url-pattern>/Provisional</url-pattern>
@@ -15,6 +27,18 @@
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CambiarC</servlet-name>
+        <url-pattern>/CambiarC</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActDatosU</servlet-name>
+        <url-pattern>/ActDatosU</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
