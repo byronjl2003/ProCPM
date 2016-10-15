@@ -47,6 +47,16 @@
 <colAssociation fkAssociation="D29FE98A-D3DA-E510-2FC8-0B72A996D11D" referredColumn="FEABE6DD-A2BD-5DAE-31C3-70B0B347BBC6"/>
 </associations>
 </Column>
+<Column name="poblacion" id="7C118676-4FBC-EFDA-88F9-43AF7D6C3D02">
+<createdBy>wxjoy</createdBy>
+<createdTime>2016-10-13 16:06:37 UTC</createdTime>
+<ownerDesignName>modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="AC74F99A-DD27-2C03-97B4-3F8E2CC9F21F" name="Pais_PK">

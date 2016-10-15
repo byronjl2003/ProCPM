@@ -43,6 +43,21 @@
                 <%=msj.toString()%>
             </div>
             <%}%>
+            
+            <%
+                msj = session.getAttribute("error");
+                if(msj!=null){
+                    session.removeAttribute("error");
+            %>
+                    <br>
+                    <br>
+                    <div class="alert alert-danger" role="alert">
+                    <strong>Hecho:</strong>
+                    <%=msj.toString()%>
+                    </div>
+            <%
+                }
+            %>
         </div>
     </body>
     <%@include file="WEB-INF/jspf/scripts.jspf" %>

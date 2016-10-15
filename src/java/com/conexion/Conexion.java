@@ -16,7 +16,11 @@ public class Conexion {
     private Connection con = null;
     private final String cliente="jdbc:oracle:thin:@localhost:1521:XE";
     //private final String cliente="jdbc:oracle:thin:@localhost:1521:XE";
+
     private final String user = "PROCPM";
+
+   
+
     private final String password = "123456";
     
     public Conexion(){

@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 4.1.3.901
---   en:        2016-10-12 18:18:00 CST
+--   en:        2016-10-13 10:07:05 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -77,7 +77,8 @@ CREATE TABLE Pais
   (
     id_pais   SMALLINT NOT NULL ,
     nombre    VARCHAR2 (50) NOT NULL ,
-    id_region INTEGER NOT NULL
+    id_region INTEGER NOT NULL ,
+    poblacion INTEGER NOT NULL
   ) ;
 ALTER TABLE Pais ADD CONSTRAINT Pais_PK PRIMARY KEY ( id_pais ) ;
 

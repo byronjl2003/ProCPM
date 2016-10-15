@@ -1,3 +1,93 @@
+--login de usuarios
+CREATE OR REPLACE PROCEDURE login_usuarios(
+  u_correo IN VARCHAR2,
+  u_clave IN VARCHAR2,
+  d_usuario OUT SYS_REFCURSOR
+)
+IS
+BEGIN
+  OPEN d_usuario FOR
+    SELECT T.id_trabajador, T.NOMBRE, T.TIPO
+    FROM trabajador  T
+    WHERE T.USUARIO = u_correo AND T.PASSWORD = u_clave;
+END;
+
+--cambia la clave del usuario
+CREATE OR REPLACE PROCEDURE cambiar_clave(
+  codigo_usuario IN INTEGER,
+  clave IN VARCHAR2,
+  n_clave IN VARCHAR2,
+  resultado OUT INTEGER
+) 
+IS
+  clave_u VARCHAR2(15) DEFAULT 'nokey';
+BEGIN
+  SELECT T.PASSWORD INTO clave_u
+  FROM TRABAJADOR T
+  WHERE T.ID_TRABAJADOR= codigo_usuario;
+  
+  IF clave = clave_u then
+    UPDATE trabajador T
+    SET T.PASSWORD = n_clave
+    WHERE T.ID_TRABAJADOR = codigo_usuario;
+    resultado := 1;
+  ELSE
+    resultado := 0;
+  END IF;
+END;
+
+--OBTENER LOS DATOS DEL USUARIO SEGUN CODIGO DE USUARIO
+
+CREATE OR REPLACE PROCEDURE get_d_usuario(
+  COD_USER_I IN INTEGER,
+  DATOS_I OUT SYS_REFCURSOR
+)
+IS
+BEGIN
+  OPEN DATOS_I FOR
+    SELECT T.NOMBRE, T.USUARIO
+    FROM TRABAJADOR T
+    WHERE T.ID_TRABAJADOR = COD_USER_I;
+END;
+
+--valida que el correo no este registrado en la base de datos
+CREATE OR REPLACE PROCEDURE validar_correo(
+  v_correo IN VARCHAR2,
+  d_usuario OUT SYS_REFCURSOR
+)
+IS
+BEGIN
+  OPEN d_usuario FOR
+    SELECT T.ID_TRABAJADOR
+    FROM TRABAJADOR T
+    WHERE T.USUARIO = v_correo;
+END;
+
+--REFRESCAR USUARIO
+CREATE OR REPLACE PROCEDURE act_d_usuario(
+  cod_u_i IN INTEGER,
+  nombre_i IN VARCHAR2,
+  correo_i IN VARCHAR2,
+  c_correo_i IN VARCHAR2
+)
+IS
+BEGIN
+  
+  IF(c_correo_i ='si') THEN
+    UPDATE TRABAJADOR T
+    SET
+      T.USUARIO = correo_i,
+      T.NOMBRE = nombre_i
+    WHERE T.ID_TRABAJADOR = cod_u_i;
+  ELSE
+    UPDATE TRABAJADOR T
+      SET
+        T.NOMBRE = nombre_i
+      WHERE T.ID_TRABAJADOR = cod_u_i;
+  END IF;
+END;
+
+
 ----TRAE EL JEFE DE TODAS LAS AREAS
 CREATE OR REPLACE PROCEDURE get_JefeDeAreas
 (
@@ -99,64 +189,4 @@ BEGIN
 END set_region;
 -------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------
------------------------------CRUD PAIS----------------------------------------------------------------
---------------------------CREA UN PAIS-------------------------------------
-CREATE OR REPLACE PROCEDURE set_pais
-(
-  nom IN VARCHAR2,
-  idregion IN INTEGER,
-  pobla IN INTEGER
-)
-AS
-BEGIN
-  INSERT INTO pais(nombre,id_region,poblacion)values(nom,idregion,pobla);
-END set_pais;
---------------------------------
---------------------------ELIMINA UN PAIS---------------------------------
-CREATE OR REPLACE PROCEDURE E_pais
-(
-  idpais IN INTEGER
-  
-)
-AS
-BEGIN
-  DELETE PAIS
-  WHERE id_pais=idpais;
-END E_pais;
---------------------------------
---------------------------MODIFICA UN PAIS--------------------------------
-CREATE OR REPLACE PROCEDURE M_pais
-(
-  idpais IN INTEGER,
-  nom IN VARCHAR2,
-  idregion IN INTEGER,
-  pobla IN INTEGER
-)
-AS
-BEGIN
-  UPDATE PAIS
-  SET nombre=nom,id_region=idregion,poblacion=pobla
-  WHERE id_pais=idpais;
-END M_pais;
 
---------------------CREA UNA FRONTERA-----------
-CREATE OR REPLACE PROCEDURE set_frontera
-(
-  idpais1 IN INTEGER,
-  idpais2 IN INTEGER
-)
-AS
-BEGIN
-  INSERT INTO FRONTERA(id_pais,id_pais2)values(idpais1,idpais2);
-END set_frontera;
------------------------------------------------
---------------------ELIMINA UNA FRONTERA------------------
-CREATE OR REPLACE PROCEDURE E_frontera
-(
-  idpais1 IN INTEGER,
-  idpais2 IN INTEGER
-)
-AS
-BEGIN
-  DELETE FRONTERA WHERE id_pais=idpais1 and id_pais2=idpais2;
-END E_frontera;
