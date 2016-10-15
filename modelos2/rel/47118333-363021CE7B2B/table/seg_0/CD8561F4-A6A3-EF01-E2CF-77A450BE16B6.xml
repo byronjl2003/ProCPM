@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD8561F4-A6A3-EF01-E2CF-77A450BE16B6" name="Trabajador">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>F67E4ABC-1999-AFE1-EFEE-36FD26BCCCD0</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_trabajador" id="35617447-2C1C-564A-7230-4C35D1C70BE1">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>D3146A30-FD3B-BCA0-0B28-38D1DFD45C5B</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="176D08A5-1454-01B9-E1DA-A4A49DE3F219">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>E0BC98BD-E8D9-D66C-989B-8FC897700C9E</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario" id="F7E2AD04-0CC4-6C20-079C-5176158433DD">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>5FB8937E-84FD-A12D-E6EE-9520982EF1A7</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="passwotd" id="A40C0453-291E-5683-FD19-B0EA5BA8E84C">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>F08EF5E7-3D79-B3B8-A2B7-D5AB47C9B995</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_ini" id="F61796A4-10C3-B20D-488F-D2E9B309483D">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>EAB2499A-F40D-B8A0-647D-B662AD663E08</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="E413596A-31E9-8395-505D-A3DA99A2FC7B">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>FE186654-3DFD-EAA0-5D89-09F8DA1DFAF2</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipe_jefe" id="61CCA81A-8090-F5FB-B1B4-3A33F07EF24F">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>13C6F5A6-9410-01F1-5BC5-B72E3007C083</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salario" id="5D334971-96E9-E104-DB77-58F81603B0A5">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>BB1A9842-9B84-2385-150A-99E944867553</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comision" id="1F34230F-85A8-CF16-509F-DCECF37D258C">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>FD1EEDAE-DE2A-54F9-971D-6E8749BD5D5B</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C45EC9FE-BAF7-1A47-8477-2A89520BB9A7" name="Trabajador_PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>58D96237-EB9C-4B12-D053-971EC0D4E8D4</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35617447-2C1C-564A-7230-4C35D1C70BE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

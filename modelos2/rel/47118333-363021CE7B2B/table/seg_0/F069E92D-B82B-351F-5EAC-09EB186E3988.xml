@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F069E92D-B82B-351F-5EAC-09EB186E3988" name="Continentes">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>DF087CC7-040B-AFEB-0DA4-4F0425943B3C</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="continente" id="54760739-3CA9-E153-706D-58055B72C49D">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>8D7308B0-C785-2739-125B-F81E65716B48</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nacion" id="F290C1DA-67D8-5B5E-CC4B-699154681EFA">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>1806C4A8-41EA-7332-75B7-E8C2A4C0F020</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capital" id="A72EC41B-504D-0ECC-7F25-04FEF83C4A16">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>C9A02D05-0DC1-BB3F-635D-D679EF18BEF2</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="region" id="6E72FAD4-23B3-1990-730F-5200DB16901D">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>442BA0CB-9ACA-84AB-F27D-991A6EB8D593</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

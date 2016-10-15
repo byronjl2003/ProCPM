@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DF087CC7-040B-AFEB-0DA4-4F0425943B3C" name="Continentes">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 21:30:38 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="continente" id="8D7308B0-C785-2739-125B-F81E65716B48">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 21:31:07 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nacion" id="1806C4A8-41EA-7332-75B7-E8C2A4C0F020">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 21:34:26 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="capital" id="C9A02D05-0DC1-BB3F-635D-D679EF18BEF2">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 21:35:34 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="region" id="442BA0CB-9ACA-84AB-F27D-991A6EB8D593">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 21:35:47 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

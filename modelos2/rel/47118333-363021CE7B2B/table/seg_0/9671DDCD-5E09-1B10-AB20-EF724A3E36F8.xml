@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9671DDCD-5E09-1B10-AB20-EF724A3E36F8" name="Poblacion">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>AB63E8A4-EF39-0AC0-845F-04AEA4E791F4</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nacion" id="902FAED2-29FD-4E86-33EB-93C82845EBF6">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>3A261CAA-0CAB-D352-F5B9-C5BE56A11549</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pobla" id="68B1EBA6-DFF6-E133-A557-76812D40A3CF">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>6D1CA74A-A86B-908F-798C-59A8912AEF79</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

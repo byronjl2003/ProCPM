@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2D9C44AF-E9F5-280F-FC81-C02213295EEA" name="Frontras">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 21:54:53 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nacion" id="3C12CBF9-0439-EC97-56DB-9EE28CB690A5">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 21:55:10 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nacionf" id="31F94F37-A2B8-11C7-3437-A37F8D27D081">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 21:55:18 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A12A4293-8D5F-AAB8-32B6-FFD49563C124" name="Invento">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>4E54274E-7EF8-9428-A8F6-80FCEC1A45FD</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_invento" id="8042886E-DB3E-472F-EFB8-3FB611230B87">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>B5890F8F-E971-292A-4FE6-C9012685EE82</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="A5D8499A-254F-F801-1DD5-673F1AE3000C">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>7DE1ABEE-A7A8-C4FE-78EC-023E9E14B76B</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fec_publicacion" id="61F7F245-42F9-7AB5-4221-3B854E1C6600">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>213C829A-30B4-B7C3-26DA-8DFD64FA3160</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="7DDBDEA0-3C0B-4296-143A-62C2827DACCB">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>82758C6F-E2D1-EE42-7377-12497577893C</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Region_id_region" id="AF4AAD84-18C3-7FB2-B182-E7B0EA1C73D8">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>E7C9FD09-90A8-7660-BF1C-9B6DAD63CD5F</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F8EF19F5-8CF1-A97F-9007-78ABDEDD4A8C" referredColumn="634EBCC4-1BF9-57B4-BB61-C35415544C47"/>
+</associations>
+</Column>
+<Column name="Area_id_area" id="9D08748E-0B3E-0708-F06C-0FA57DFFDCD1">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>AAAA0C37-ED9E-05E0-5667-7ED8206FFB92</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58A2425E-5571-795F-E605-5E418C6B97DE" referredColumn="61943DFD-A53B-7DD4-D3BE-60AC36A3F0E6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B9BDBDA9-7859-A2BD-5873-072357D59EBE" name="Invento_PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>7D174DC9-22C7-80E7-A531-16B8037EE910</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8042886E-DB3E-472F-EFB8-3FB611230B87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF3CE898-F2E8-1C2E-1D15-A25CCF35A775" name="Invento_Area_FK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>73499285-EB4F-4654-3BD9-F04EAE427936</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D08748E-0B3E-0708-F06C-0FA57DFFDCD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5137074C-386A-015D-F8E8-0B792B2488C7" name="Invento_Region_FK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>A54FD448-B351-D5A3-368E-6000E9CEEB26</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF4AAD84-18C3-7FB2-B182-E7B0EA1C73D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

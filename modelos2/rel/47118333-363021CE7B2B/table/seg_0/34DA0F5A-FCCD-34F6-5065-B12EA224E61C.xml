@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="34DA0F5A-FCCD-34F6-5065-B12EA224E61C" name="AsigArea">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>46259668-1C91-4552-1833-40B452856F17</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Area_id_area" id="C9DE0F5B-8C58-01FF-66A0-BBD8840AD7D9">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>823F4C00-03AC-5E7B-959D-2B9211823344</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="64985BFA-6A53-BECC-4B2C-993C3FB7B3EB" referredColumn="61943DFD-A53B-7DD4-D3BE-60AC36A3F0E6"/>
+</associations>
+</Column>
+<Column name="Trabajador_id_trabajador" id="2AC72B08-5EFF-4761-F049-20750EA40E8A">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>F9201184-962A-32C1-0345-273AC104FF42</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12B9A8D9-A156-FD1D-042A-157453A3FD0B" referredColumn="35617447-2C1C-564A-7230-4C35D1C70BE1"/>
+</associations>
+</Column>
+<Column name="ranking" id="3587C49B-9EAD-D51A-7CCE-7D6BEB2A6A68">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>C8DF5032-404D-3DF0-2A5F-E64A13DB064B</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E75070FC-E7AC-EB26-0BE2-4D6A3681AC6B" name="AsigArea_PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:50:59 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9DE0F5B-8C58-01FF-66A0-BBD8840AD7D9"/>
+<colUsage columnID="2AC72B08-5EFF-4761-F049-20750EA40E8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8B35E1C-47E6-E27F-EEA3-B02089DAB098" name="AsigArea_Area_FK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>2AA3C2ED-2AB7-8E0D-F8B2-148780E601B9</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9DE0F5B-8C58-01FF-66A0-BBD8840AD7D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B19E685-B72B-CF7A-E510-0928A2CB0E6D" name="AsigArea_Trabajador_FK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>CD99D45A-4FA3-8B46-94A5-CF21336FAFA1</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AC72B08-5EFF-4761-F049-20750EA40E8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

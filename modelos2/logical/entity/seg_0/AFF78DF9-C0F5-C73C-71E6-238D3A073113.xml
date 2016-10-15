@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AFF78DF9-C0F5-C73C-71E6-238D3A073113" name="Representante">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 05:20:45 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_representante" id="87B66E17-2635-593D-BFE3-9806EA67492A">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 05:22:32 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="AE7E9C6A-3FB1-4E1F-FB66-02A16B6248C5">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 05:22:56 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_region" id="575A538C-8CF1-C9D8-497A-3BFDB51F6EF9">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 05:21:52 UTC</createdTime>
+<generatorID>F3F7AA86-C106-075F-365C-BEB9EFC8FEDC</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<referedAttribute>C98174C2-E208-3FCF-5560-2A29477C231C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3E6B3C66-84EE-8E07-04A9-3134FC7B00A8" name="Representante PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-12 05:22:54 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>87B66E17-2635-593D-BFE3-9806EA67492A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

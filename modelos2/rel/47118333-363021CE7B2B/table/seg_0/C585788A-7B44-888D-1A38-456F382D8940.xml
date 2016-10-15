@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C585788A-7B44-888D-1A38-456F382D8940" name="AsigInvento">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>4BD801BA-9C59-BF2C-A05D-657C60ABB89A</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Invento_id_invento" id="F89302D6-7826-CE05-8368-7DDF2CDF1788">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>941C4827-3247-DB71-84BA-3DC950265EFE</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BCF441E-FFC3-9374-2078-F97307E40B94" referredColumn="8042886E-DB3E-472F-EFB8-3FB611230B87"/>
+</associations>
+</Column>
+<Column name="Trabajador_id_trabajador" id="7351954A-FF46-0368-A8B1-B2AE54E2FB63">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>88036995-1948-DF37-9617-766608DCC395</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2C257BC-ABC1-47F7-4ADE-0C3652BB9A58" referredColumn="35617447-2C1C-564A-7230-4C35D1C70BE1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE49A008-DC75-4262-E572-979039D2948D" name="AsigInvento_PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:51:29 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F89302D6-7826-CE05-8368-7DDF2CDF1788"/>
+<colUsage columnID="7351954A-FF46-0368-A8B1-B2AE54E2FB63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25611F14-03F9-6426-15BF-9174599DC103" name="AsigInvento_Invento_FK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>BF6B43D3-4AFC-77D8-ED3C-607E1E15C115</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F89302D6-7826-CE05-8368-7DDF2CDF1788"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="540AF775-A909-7342-EFFA-960ACD4B1741" name="AsigInvento_Trabajador_FK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>FD3BFD33-A5AE-BCB4-F25F-2441852CDEDB</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7351954A-FF46-0368-A8B1-B2AE54E2FB63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

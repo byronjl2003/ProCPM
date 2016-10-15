@@ -1,0 +1,200 @@
+Continente,Nacion,Capital,Region
+Europa,Albania,Tirana,Europa meridional
+Europa,Alemania,Berlín,Europa occidental
+Europa,Andorra,Andorra la Vieja,Europa meridional
+Europa,Austria,Viena,Europa occidental
+Europa,Azerbaiyán,Bakú,Europa central-oriental
+Europa,Bélgica,Bruselas,Europa occidental
+Europa,Bielorrusia,Minsk,Europa central-oriental
+Europa,Bosnia-Herzegovina,Sarajevo,Europa meridional
+Europa,Bulgaria,Sofía,Europa central-oriental
+Europa,Chipre,Nicosia,Europa mediterráneo oriental
+Europa,Ciudad del Vaticano,Ciudad del Vaticano,Europa meridional
+Europa,Croacia,Zagreb,Europa meridional
+Europa,Dinamarca,Copenhague,Europa del norte
+Europa,Eslovaquia,Bratislava,Europa central-oriental
+Europa,Eslovenia,Liubliana,Europa meridional
+Europa,España,Madrid,Europa meridional
+Europa,Estonia,Tallin,Europa central-oriental
+Europa,Finlandia,Helsinki,Europa del norte
+Europa,Francia,París,Europa occidental
+Europa,Georgia,Tiflis,Europa central-oriental
+Europa,Grecia,Atenas,Europa meridional
+Europa,Hungría,Budapest,Europa central-oriental
+Europa,Irlanda,Dublín,Europa del norte
+Europa,Islandia,Reikiavik,Europa del norte
+Europa,Italia,Roma,Europa meridional
+Europa,Kosovo,Pristina,Europa meridional
+Europa,Letonia,Riga,Europa central-oriental
+Europa,Liechtenstein,Vaduz,Europa occidental
+Europa,Lituania,Vilna,Europa central-oriental
+Europa,Luxemburgo,Luxemburgo,Europa occidental
+Europa,República de Macedonia,Skopie,Europa meridional
+Europa,Malta,La Valeta,Europa meridional
+Europa,Moldavia,Chisinau,Europa central-oriental
+Europa,Mónaco,Mónaco,Europa occidental
+Europa,Montenegro,Podgorica,Europa meridional
+Europa,Noruega,Oslo,Europa del norte
+Europa,Países Bajos,Ámsterdam,Europa occidental
+Europa,Polonia,Varsovia,Europa central-oriental
+Europa,Portugal,Lisboa,Europa meridional
+Europa,Reino Unido,Londres,Europa del norte
+Europa,República Checa,Praga,Europa central-oriental
+Europa,Rumanía,Bucarest,Europa central-oriental
+Europa,Rusia,Moscú,Europa central-oriental
+Europa,San Marino,San Marino,Europa meridional
+Europa,Serbia,Belgrado,Europa meridional
+Europa,Suecia,Estocolmo,Europa del norte
+Europa,Suiza,Berna,Europa occidental
+Europa,Turquía,Ankara,Europa mediterráneo oriental
+Europa,Ucrania,Kiev ,Europa central-oriental
+Asia,Afganistán,Kabul ,Asia meridional
+Asia,Arabia Saudí,Riad ,Asia meridional
+Asia,Armenia,Ereván ,Asia meridional
+Asia,Baréin,Manama ,Asia meridional
+Asia,Bangladés,Daca ,Asia meridional
+Asia,Bután,Timbu ,Asia meridional
+Asia,Brunéi,Bandar Seri Begawan ,Asia del sudeste
+Asia,Camboya,Phnom Penh ,Asia del sudeste
+Asia,Catar,Doha ,Asia meridional
+Asia,China,Pekín ,Asia del nordeste
+Asia,Corea del Norte,Pionyang ,Asia del nordeste
+Asia,Corea del Sur,Seúl ,Asia del nordeste
+Asia,Emiratos Árabes Unidos,Abu Dabi ,Asia meridional
+Asia,Filipinas,Manila ,Asia del sudeste
+Asia,India,Nueva Delhi ,Asia meridional
+Asia,Indonesia,Yakarta ,Asia del sudeste
+Asia,Irak,Bagdad ,Asia meridional
+Asia,Irán,Teherán ,Asia meridional
+Asia,Israel,Jerusalén ,Asia meridional
+Asia,Japón,Tokio ,Asia del nordeste
+Asia,Jordania,Amán ,Asia meridional
+Asia,Kazajistán,Astaná ,Asia meridional
+Asia,Kirguistán,Biskek ,Asia meridional
+Asia,Kuwait,Kuwait ,Asia meridional
+Asia,Laos,Vientián ,Asia del sudeste
+Asia,Líbano,Beirut ,Asia meridional
+Asia,Malasia,Kuala Lumpur ,Asia del sudeste
+Asia,Maldivas,Malé ,Asia meridional
+Asia,Mongolia,Ulán Bator ,Asia del nordeste
+Asia,Myanmar,Naipyidó ,Asia del sudeste
+Asia,Nepal,Katmandú ,Asia meridional
+Asia,Omán,Mascate ,Asia meridional
+Asia,Pakistán,Islamabad ,Asia meridional
+Asia,Palestina,Jerusalén ,Asia meridional
+Asia,Singapur,Singapur ,Asia del sudeste
+Asia,Siria,Damasco ,Asia meridional
+Asia,Sri Lanka,Colombo ,Asia meridional
+Asia,Tailandia,Bangkok ,Asia del sudeste
+Asia,Taiwán,Taipéi ,Asia del nordeste
+Asia,Tayikistán,Dusambé ,Asia meridional
+Asia,Timor Oriental,Dili ,Asia del sudeste
+Asia,Turkmenistán,Asjabad ,Asia meridional
+Asia,Uzbekistán,Taskent ,Asia meridional
+Asia,Vietnam,Hanói ,Asia del sudeste
+Asia,Yemen,Saná,Asia meridional
+África,Angola,Luanda ,África central
+África,Argelia,Argel ,África del norte
+África,Benín,Porto Novo ,África occidental
+África,Botsuana,Gaborone ,África meridional
+África,Burkina Faso,Uagadugú ,África occidental
+África,Burundi,Buyumbura ,África oriental
+África,Camerún,Yaundé ,África central
+África,Cabo Verde,Praia ,África occidental
+África,Chad,Yamena ,África central
+África,Comoras,Moroni ,África oriental
+África,Congo,Brazzaville ,África central
+África,Costa de Marfil,Yamusukro ,África occidental
+África,Egipto,El Cairo ,África del norte
+África,Eritrea,Asmara ,África oriental
+África,Etiopía,Adís Abeba ,África oriental
+África,Gabón,Libreville ,África central
+África,Gambia,Banjul ,África occidental
+África,Ghana,Acra ,África occidental
+África,Guinea,Conakri ,África occidental
+África,Guinea-Bisau,Bisáu ,África occidental
+África,Guinea Ecuatorial,Malabo ,África central
+África,Kenia,Nairobi ,África oriental
+África,Lesoto,Maseru ,África meridional
+África,Liberia,Monrovia ,África occidental
+África,Libia,Trípoli ,África del norte
+África,Madagascar,Antananarivo ,África oriental
+África,Malaui,Lilongüe ,África oriental
+África,Malí,Bamako ,África occidental
+África,Marruecos,Rabat ,África del norte
+África,Mauricio,Port Louis ,África oriental
+África,Mauritania,Nuakchot ,África occidental
+África,Mozambique,Maputo ,África oriental
+África,Namibia,Windhoek ,África meridional
+África,Níger,Niamey ,África occidental
+África,Nigeria,Abuya ,África occidental
+África,República Centroafricana,Bangui ,África central
+África,República Democrática del Congo,Kinsasa ,África central
+África,Ruanda,Kigali ,África oriental
+África,Santo Tomé y Príncipe,Santo Tomé ,África central
+África,Senegal,Dakar ,África occidental
+África,Seychelles,Victoria ,África oriental
+África,Sierra Leona,Freetown ,África occidental
+África,Somalia,Mogadiscio ,África oriental
+África,Suazilandia,Mbabane ,África meridional
+África,Sudáfrica,Ciudad del Cabo,África meridional
+África,Sudán,Jartum ,África del norte
+África,Sudán del Sur,Yuba ,África meridional
+África,Tanzania,Dodoma ,África oriental
+África,Togo,Lomé ,África occidental
+África,Túnez,Túnez ,África del norte
+África,Uganda,Kampala ,África oriental
+África,Yibuti,Yibuti ,África oriental
+África,Zambia,Lusaka ,África oriental
+África,Zimbabue,Harare ,África oriental
+América,Antigua y Barbuda,Saint John's ,Caribe
+América,Bahamas,Nasáu ,Caribe
+América,Barbados,Bridgetown ,Caribe
+América,Belice,Belmopán ,América central
+América,Canadá,Ottawa ,América del norte
+América,Costa Rica,San José ,América central
+América,Cuba,La Habana ,Caribe
+América,Dominica,Roseau ,Caribe
+América,El Salvador,San Salvador ,América central
+América,Estados Unidos,Washington ,América del norte
+América,Granada,Saint George's ,Caribe
+América,Guatemala,Ciudad de Guatemala ,América central
+América,Haití,Puerto Príncipe ,Caribe
+América,Honduras,Tegucigalpa ,América central
+América,Jamaica,Kingston ,Caribe
+América,México,Ciudad de México ,América del norte
+América,Nicaragua,Managua ,América central
+América,Panamá,Ciudad de Panamá ,América central
+América,República Dominicana,Santo Domingo ,Caribe
+América,San Cristóbal y Nieves,Basseterre ,Caribe
+América,San Vicente y las Granadinas,Kingstown ,Caribe
+América,Santa Lucía,Castries ,Caribe
+América,Trinidad y Tobago,Puerto España ,Caribe
+America,Argentina,Buenos Aires ,América del sur
+América,Aruba,Oranjestad ,América del sur
+América,Bolivia,Sucre ,América del sur
+América,Brasil,Brasilia ,América del sur
+América,Chile,Santiago de Chile ,América del sur
+América,Colombia,Bogotá ,América del sur
+América,Ecuador,Quito ,América del sur
+América,Guyana,Georgetown ,América del sur
+América,Paraguay,Asunción ,América del sur
+América,Perú,Lima ,América del sur
+América,Surinam,Paramaribo ,América del sur
+América,Uruguay,Montevideo ,América del sur
+América,Venezuela,Caracas ,América del sur
+Oceanía,Australia,Canberra ,Australasia
+Oceanía,Estados Federados de Micronesia,Palikir ,Micronesia
+Oceanía,Fiyi,Suva ,Melanesia
+Oceanía,Kiribati,Tarawa Sur ,Micronesia
+Oceanía,Islas Marshall,Majuro ,Micronesia
+Oceanía,Nauru,Yaren ,Micronesia
+Oceanía,Nueva Zelanda,Wellington ,Australasia
+Oceanía,Palaos,Ngerulmud ,Micronesia
+Oceanía,Papúa Nueva Guinea,Port Moresby ,Melanesia
+Oceanía,Islas Salomón,Honiara ,Melanesia
+Oceanía,Samoa,Apia ,Polinesia
+Oceanía,Tazmania,Canberra ,Australasia
+Oceanía,Tonga,Nukualofa ,Polinesia
+Oceanía,Tuvalu,Funafuti ,Polinesia
+Oceanía,Vanuatu,Port-Vila,Melanesia

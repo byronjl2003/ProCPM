@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6258967C-1952-092F-52F3-954F210AA3B5" name="Inventor">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-10 19:31:38 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_inventor" id="0BAB4C7A-AA3E-8490-933B-ED4B5D58ADEC">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:31:03 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="984EAB61-0EB1-BA5F-3702-9D4A53904634">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:31:21 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_region" id="C31E5727-0EFC-C0B1-06F4-06AFFCE9946D">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:32:14 UTC</createdTime>
+<generatorID>5D2FADC9-EFBE-4CB5-DE93-18CD9415A5EB</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+</engineerTo>
+<referedAttribute>C98174C2-E208-3FCF-5560-2A29477C231C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8D5F7BAC-CB9B-20A8-69C1-25862B721C60" name="Inventor PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-11 05:31:19 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0BAB4C7A-AA3E-8490-933B-ED4B5D58ADEC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

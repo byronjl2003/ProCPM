@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C48792D5-A665-E77E-E01C-B0C780AE8AF5" name="Representante">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>AFF78DF9-C0F5-C73C-71E6-238D3A073113</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_representante" id="24D8C344-293D-52F1-1FF5-7C4268862534">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>87B66E17-2635-593D-BFE3-9806EA67492A</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="A2C2A103-835F-4D66-AE96-3FDFCAB6A6CE">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>AE7E9C6A-3FB1-4E1F-FB66-02A16B6248C5</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Region_id_region" id="CD1A1C1F-97DC-C7E4-6386-D9863B9BC516">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>575A538C-8CF1-C9D8-497A-3BFDB51F6EF9</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AFDBC51F-CBF9-A1B6-9EC2-D72226D9801E" referredColumn="634EBCC4-1BF9-57B4-BB61-C35415544C47"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C097496-7441-5A30-DDAA-CDD4D2080813" name="Representante_PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>3E6B3C66-84EE-8E07-04A9-3134FC7B00A8</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24D8C344-293D-52F1-1FF5-7C4268862534"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF0CC95D-10A6-EAD2-F0A8-30F7A461E06B" name="Representante__IDX">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F3F7AA86-C106-075F-365C-BEB9EFC8FEDC</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="CD1A1C1F-97DC-C7E4-6386-D9863B9BC516"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FAE2932E-7A14-4B3F-BAE6-F1C2649C536F" name="Representante_Region_FK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-14 22:41:28 UTC</createdTime>
+<generatorID>F3F7AA86-C106-075F-365C-BEB9EFC8FEDC</generatorID>
+<ownerDesignName>modelos2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD1A1C1F-97DC-C7E4-6386-D9863B9BC516"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
