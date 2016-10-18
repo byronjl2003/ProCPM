@@ -20,6 +20,10 @@
         <servlet-name>ActDatosU</servlet-name>
         <servlet-class>servlet.ActDatosU</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RegInventor</servlet-name>
+        <servlet-class>servlet.RegInventor</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Provisional</servlet-name>
         <url-pattern>/Provisional</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>ActDatosU</servlet-name>
         <url-pattern>/ActDatosU</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegInventor</servlet-name>
+        <url-pattern>/RegInventor</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

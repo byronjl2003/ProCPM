@@ -87,7 +87,29 @@ BEGIN
   END IF;
 END;
 
+--Lista Todos los paises de la base
+CREATE OR REPLACE PROCEDURE listado_paises(
+  paises OUT SYS_REFCURSOR
+)
+IS
+BEGIN
+  OPEN paises FOR
+    SELECT R.NOMBRE, R.ID_REGION
+    FROM REGION R
+    WHERE R.tipo = 'P'
+    ORDER BY R.NOMBRE;
+END;
 
+--Registrar inventor
+CREATE OR REPLACE PROCEDURE crear_inventor(
+  nombre_i IN VARCHAR2,
+  correo_i IN VARCHAR2,
+  codigo_pais_i IN INTEGER
+)
+IS
+BEGIN
+  INSERT INTO INVENTOR (nombre,correo,region_id_region) values (nombre_i,correo_i,codigo_pais_i);
+END;
 ----TRAE EL JEFE DE TODAS LAS AREAS
 CREATE OR REPLACE PROCEDURE get_JefeDeAreas
 (
