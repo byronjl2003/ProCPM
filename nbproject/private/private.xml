@@ -3,9 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+
             <file>file:/home/byron/Documentos/DB1/ProClase2/ProCPM/web/Admin/jscruds.js</file>
             <file>file:/home/byron/Documentos/DB1/ProClase2/ProCPM/web/reg.jsp</file>
             <file>file:/home/byron/Documentos/DB1/ProClase2/ProCPM/web/Admin/Crud_Regiones.jsp</file>
+
+            <file>file:/home/wxjoy/NetBeansProjects/ProCPM/web/WEB-INF/jspf/menup.jspf</file>
+            <file>file:/home/wxjoy/NetBeansProjects/ProCPM/src/java/servlet/RegInventor.java</file>
+            <file>file:/home/wxjoy/NetBeansProjects/ProCPM/web/User/nInventor.jsp</file>
+            <file>file:/home/wxjoy/NetBeansProjects/ProCPM/src/java/com/conexion/Area.java</file>
+            <file>file:/home/wxjoy/NetBeansProjects/ProCPM/src/java/com/conexion/Invento.java</file>
+            <file>file:/home/wxjoy/NetBeansProjects/ProCPM/web/WEB-INF/jspf/menu_a.jspf</file>
+            <file>file:/home/wxjoy/NetBeansProjects/ProCPM/src/java/com/conexion/Inventor.java</file>
+            <file>file:/home/wxjoy/NetBeansProjects/ProCPM/web/User/nInvento.jsp</file>
+            <file>file:/home/wxjoy/NetBeansProjects/ProCPM/src/java/com/conexion/Region.java</file>
+            <file>file:/home/wxjoy/NetBeansProjects/ProCPM/web/WEB-INF/jspf/menu_t.jspf</file>
+
         </group>
     </open-files>
 </project-private>

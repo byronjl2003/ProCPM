@@ -110,6 +110,31 @@ IS
 BEGIN
   INSERT INTO INVENTOR (nombre,correo,region_id_region) values (nombre_i,correo_i,codigo_pais_i);
 END;
+
+--Obtener areas
+CREATE OR REPLACE PROCEDURE get_area(
+  areas_o OUT SYS_REFCURSOR
+)
+IS
+BEGIN
+  OPEN areas_o FOR
+    SELECT A.ID_AREA, A.NOMBRE
+    FROM AREA A
+    ORDER BY A.NOMBRE;
+END;
+
+--Registrar invento
+CREATE OR REPLACE PROCEDURE nuevo_invento(
+  descripcionIN IN VARCHAR2,
+  regid IN INTEGER,
+  areaid IN INTEGER,
+  IDINV OUT INTEGER
+)
+IS
+BEGIN
+  INSERT INTO INVENTO(DESCRIPCION,ESTADO,ID_REGION,ID_AREA) values (descripcionIN,'E',regid,areaid)
+  RETURNING ID_INVENTO INTO IDINV;
+END;
 ----TRAE EL JEFE DE TODAS LAS AREAS
 CREATE OR REPLACE PROCEDURE get_JefeDeAreas
 (
