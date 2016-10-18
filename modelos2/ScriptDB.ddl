@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 4.1.3.901
---   en:        2016-10-14 18:13:50 CST
+--   en:        2016-10-17 18:37:51 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -23,7 +23,7 @@ ALTER TABLE Area ADD CONSTRAINT Area_PK PRIMARY KEY ( id_area ) ;
 
 
 CREATE TABLE Areas
-  ( nacion VARCHAR2 (20) , area INTEGER
+  ( nacion VARCHAR2 (50) , area FLOAT
   ) ;
 
 
@@ -46,10 +46,10 @@ ALTER TABLE AsigInvento ADD CONSTRAINT AsigInvento_PK PRIMARY KEY ( Invento_id_i
 
 CREATE TABLE Continentes
   (
-    continente VARCHAR2 (20) ,
-    nacion     VARCHAR2 (30) ,
-    capital    VARCHAR2 (30) ,
-    region     VARCHAR2 (30)
+    continente VARCHAR2 (50) ,
+    nacion     VARCHAR2 (50) ,
+    capital    VARCHAR2 (50) ,
+    region     VARCHAR2 (50)
   ) ;
 
 
@@ -69,7 +69,7 @@ ALTER TABLE Frontera ADD CONSTRAINT Relation_2_PK PRIMARY KEY ( Region_id_region
 
 
 CREATE TABLE Frontras
-  ( nacion VARCHAR2 (20) , nacionf VARCHAR2 (20)
+  ( nacion VARCHAR2 (50) , nacionf VARCHAR2 (50)
   ) ;
 
 
@@ -98,18 +98,18 @@ CREATE TABLE Patentes
   (
     codigopatente     INTEGER ,
     aniopubli         SMALLINT ,
-    descrippatente    VARCHAR2 (200) ,
-    pais              VARCHAR2 (20) ,
+    descrippatente    VARCHAR2 (300) ,
+    pais              VARCHAR2 (50) ,
     rankingarea       SMALLINT ,
-    areainvestigacion VARCHAR2 (20) ,
-    descriparea       VARCHAR2 (200) ,
+    areainvestigacion VARCHAR2 (50) ,
+    descriparea       VARCHAR2 (300) ,
     inventor          VARCHAR2 (50) ,
-    nacionalidad      VARCHAR2 (20)
+    nacionalidad      VARCHAR2 (50)
   ) ;
 
 
 CREATE TABLE Poblacion
-  ( nacion VARCHAR2 (20) , pobla INTEGER
+  ( nacion VARCHAR2 (50) , pobla INTEGER
   ) ;
 
 
@@ -120,7 +120,7 @@ CREATE TABLE Profesionales
     comision FLOAT ,
     fecini DATE ,
     puesto VARCHAR2 (10) ,
-    area   VARCHAR2 (30)
+    area   VARCHAR2 (50)
   ) ;
 
 
@@ -155,10 +155,10 @@ CREATE TABLE Trabajador
     id_trabajador SMALLINT NOT NULL ,
     nombre        VARCHAR2 (50) NOT NULL ,
     usuario       VARCHAR2 (50 CHAR) NOT NULL ,
-    passwotd      VARCHAR2 (15 CHAR) NOT NULL ,
+    password      VARCHAR2 (15 CHAR) NOT NULL ,
     fecha_ini     DATE NOT NULL ,
     tipo          CHAR (1 CHAR) NOT NULL ,
-    tipe_jefe     VARCHAR2 (1 CHAR) NOT NULL ,
+    tipo_jefe     VARCHAR2 (1 CHAR) NOT NULL ,
     salario FLOAT NOT NULL ,
     comision FLOAT
   ) ;

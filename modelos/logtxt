@@ -1,0 +1,66 @@
+Sequence AREA_ID_AREA_SEQ borrado.
+
+
+Error que empieza en la línea: 16 del comando :
+DROP TRIGGER Area_id_area_TRG
+Informe de error -
+Error SQL: ORA-04080: trigger 'AREA_ID_AREA_TRG' does not exist
+04080. 00000 -  "trigger '%s' does not exist"
+*Cause:    The TRIGGER name is invalid.
+*Action:   Check the trigger name.
+
+Sequence INVENTO_ID_INVENTO_SEQ borrado.
+
+Error que empieza en la línea: 23 del comando :
+DROP TRIGGER Invento_id_invento_TRG
+Informe de error -
+Error SQL: ORA-04080: trigger 'INVENTO_ID_INVENTO_TRG' does not exist
+04080. 00000 -  "trigger '%s' does not exist"
+*Cause:    The TRIGGER name is invalid.
+*Action:   Check the trigger name.
+
+Sequence INVENTOR_ID_INVENTOR_SEQ borrado.
+
+
+Error que empieza en la línea: 30 del comando :
+DROP TRIGGER Inventor_id_inventor_TRG
+Informe de error -
+Error SQL: ORA-04080: trigger 'INVENTOR_ID_INVENTOR_TRG' does not exist
+04080. 00000 -  "trigger '%s' does not exist"
+*Cause:    The TRIGGER name is invalid.
+*Action:   Check the trigger name.
+
+Sequence PAIS_ID_PAIS_SEQ borrado.
+
+
+Error que empieza en la línea: 37 del comando :
+DROP TRIGGER Pais_id_pais_TRG
+Informe de error -
+Error SQL: ORA-04080: trigger 'PAIS_ID_PAIS_TRG' does not exist
+04080. 00000 -  "trigger '%s' does not exist"
+*Cause:    The TRIGGER name is invalid.
+*Action:   Check the trigger name.
+Sequence REGION_ID_REGION_SEQ borrado.
+
+
+Error que empieza en la línea: 44 del comando :
+DROP TRIGGER Region_id_region_TRG
+Informe de error -
+Error SQL: ORA-04080: trigger 'REGION_ID_REGION_TRG' does not exist
+04080. 00000 -  "trigger '%s' does not exist"
+*Cause:    The TRIGGER name is invalid.
+*Action:   Check the trigger name.
+
+Sequence REPRESENTANTE_ID_REPRESENTANTE borrado.
+
+
+Error que empieza en la línea: 51 del comando :
+DROP TRIGGER Representante_id_representante
+Informe de error -
+Error SQL: ORA-04080: trigger 'REPRESENTANTE_ID_REPRESENTANTE' does not exist
+04080. 00000 -  "trigger '%s' does not exist"
+*Cause:    The TRIGGER name is invalid.
+*Action:   Check the trigger name.
+
+Sequence TRABAJADOR_ID_TRABAJADOR_SEQ borrado.
+

@@ -4,7 +4,7 @@
 <createdTime>2016-10-10 19:31:28 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2016-10-11 05:24:26 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,7 +32,7 @@
 <createdTime>2016-10-11 05:24:39 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,7 +45,7 @@
 <createdTime>2016-10-12 19:13:31 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -53,12 +53,12 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="passwotd" id="F08EF5E7-3D79-B3B8-A2B7-D5AB47C9B995">
+<Attribute name="password" id="F08EF5E7-3D79-B3B8-A2B7-D5AB47C9B995">
 <createdBy>byron</createdBy>
 <createdTime>2016-10-12 19:14:58 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -71,7 +71,7 @@
 <createdTime>2016-10-12 19:15:41 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -83,7 +83,7 @@
 <createdTime>2016-10-12 19:16:04 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -91,12 +91,12 @@
 <dataTypeSize>1 CHAR</dataTypeSize>
 <ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="tipe_jefe" id="13C6F5A6-9410-01F1-5BC5-B72E3007C083">
+<Attribute name="tipo_jefe" id="13C6F5A6-9410-01F1-5BC5-B72E3007C083">
 <createdBy>byron</createdBy>
 <createdTime>2016-10-12 19:16:31 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -109,7 +109,7 @@
 <createdTime>2016-10-14 15:02:41 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -121,7 +121,7 @@
 <createdTime>2016-10-14 15:02:57 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -135,9 +135,8 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:24:36 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="false"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

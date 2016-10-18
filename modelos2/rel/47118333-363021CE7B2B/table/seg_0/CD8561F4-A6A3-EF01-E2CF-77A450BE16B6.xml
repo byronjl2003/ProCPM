@@ -44,7 +44,7 @@
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="passwotd" id="A40C0453-291E-5683-FD19-B0EA5BA8E84C">
+<Column name="password" id="A40C0453-291E-5683-FD19-B0EA5BA8E84C">
 <createdBy>byron</createdBy>
 <createdTime>2016-10-14 22:41:28 UTC</createdTime>
 <generatorID>F08EF5E7-3D79-B3B8-A2B7-D5AB47C9B995</generatorID>
@@ -79,7 +79,7 @@
 <ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="tipe_jefe" id="61CCA81A-8090-F5FB-B1B4-3A33F07EF24F">
+<Column name="tipo_jefe" id="61CCA81A-8090-F5FB-B1B4-3A33F07EF24F">
 <createdBy>byron</createdBy>
 <createdTime>2016-10-14 22:41:28 UTC</createdTime>
 <generatorID>13C6F5A6-9410-01F1-5BC5-B72E3007C083</generatorID>

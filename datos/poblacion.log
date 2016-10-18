@@ -1,0 +1,51 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on Lun Oct 17 14:02:50 2016
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   Control/poblacion.ctl
+Data File:      FileData/poblacion.csv
+  Bad File:     Control/poblacion.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table POBLACION, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+NACION                              FIRST     *   ,       CHARACTER            
+    SQL string for column : "TRIM(:NACION)"
+POBLA                                NEXT     *   ,       CHARACTER            
+    SQL string for column : "TRIM(:POBLA)"
+
+
+Table POBLACION:
+  244 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  33024 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:           244
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Lun Oct 17 14:02:50 2016
+Run ended on Lun Oct 17 14:02:50 2016
+
+Elapsed time was:     00:00:00.12
+CPU time was:         00:00:00.01
