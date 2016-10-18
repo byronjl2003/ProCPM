@@ -2,3 +2,5 @@
 *.class
 *.war
 *.jar
+/web/jquery-ui/nbproject/private/
+/dist/
