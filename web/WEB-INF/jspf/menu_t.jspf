@@ -11,10 +11,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/ProCPM/User/TInicio.jsp"><span class="fa-2x fa-home"></span>Inicio</a></li>
+                <li><a href="/ProCPM/User/TInicio.jsp"><span class="fa fa-2x fa-home"></span>Inicio</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <span class="fa-2x fa-plus-circle"></span>
+                        <span class="fa fa-2x fa-plus-circle"></span>
                         Registrar<span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
@@ -22,7 +22,7 @@
                             <a href="/ProCPM/User/nInventor.jsp">Inventor</a>
                         </li>
                         <li>
-                            <a href="#">Invento</a>
+                            <a href="/ProCPM/User/nInvento.jsp">Invento</a>
                         </li>
                     </ul>
                 </li>
@@ -43,14 +43,14 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa-2x fa-gears"></span> Usuario<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-2x fa-gears"></span> Usuario<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="/ProCPM/User/cambiard.jsp">Cambiar datos</a></li>
                         <li><a href="/ProCPM/User/c_clave.jsp">Cambiar Clave</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="/ProCPM/Logout"><span class="fa-2x fa-sign-out"></span>Salir</a>
+                    <a href="/ProCPM/Logout"><span class="fa fa-2x fa-sign-out"></span>Salir</a>
                 </li>
             </ul>
         </div>
