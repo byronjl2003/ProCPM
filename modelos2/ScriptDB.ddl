@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 4.1.3.901
---   en:        2016-10-17 18:37:51 CST
+--   en:        2016-10-18 15:49:43 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -8,15 +8,15 @@
 
 CREATE TABLE Area
   (
-    id_area                  SMALLINT NOT NULL ,
-    nombre                   VARCHAR2 (50) NOT NULL ,
-    descripcion              VARCHAR2 (100) ,
-    ranking                  SMALLINT ,
-    Trabajador_id_trabajador SMALLINT NOT NULL
+    id_area       SMALLINT NOT NULL ,
+    nombre        VARCHAR2 (50) NOT NULL ,
+    descripcion   VARCHAR2 (100) ,
+    ranking       SMALLINT ,
+    id_trabajador SMALLINT NOT NULL
   ) ;
 CREATE UNIQUE INDEX Area__IDX ON Area
   (
-    Trabajador_id_trabajador ASC
+    id_trabajador ASC
   )
   ;
 ALTER TABLE Area ADD CONSTRAINT Area_PK PRIMARY KEY ( id_area ) ;
@@ -29,19 +29,19 @@ CREATE TABLE Areas
 
 CREATE TABLE AsigArea
   (
-    Area_id_area             SMALLINT NOT NULL ,
-    Trabajador_id_trabajador SMALLINT NOT NULL ,
-    ranking                  SMALLINT NOT NULL
+    id_area       SMALLINT NOT NULL ,
+    id_trabajador SMALLINT NOT NULL ,
+    ranking       SMALLINT NOT NULL
   ) ;
-ALTER TABLE AsigArea ADD CONSTRAINT AsigArea_PK PRIMARY KEY ( Area_id_area, Trabajador_id_trabajador ) ;
+ALTER TABLE AsigArea ADD CONSTRAINT AsigArea_PK PRIMARY KEY ( id_area, id_trabajador ) ;
 
 
 CREATE TABLE AsigInvento
   (
-    Invento_id_invento       SMALLINT NOT NULL ,
-    Trabajador_id_trabajador SMALLINT NOT NULL
+    id_invento    SMALLINT NOT NULL ,
+    id_trabajador SMALLINT NOT NULL
   ) ;
-ALTER TABLE AsigInvento ADD CONSTRAINT AsigInvento_PK PRIMARY KEY ( Invento_id_invento, Trabajador_id_trabajador ) ;
+ALTER TABLE AsigInvento ADD CONSTRAINT AsigInvento_PK PRIMARY KEY ( id_invento, id_trabajador ) ;
 
 
 CREATE TABLE Continentes
@@ -55,17 +55,17 @@ CREATE TABLE Continentes
 
 CREATE TABLE Det_invento
   (
-    Inventor_id_inventor SMALLINT NOT NULL ,
-    Invento_id_invento   SMALLINT NOT NULL
+    id_inventor SMALLINT NOT NULL ,
+    id_invento  SMALLINT NOT NULL
   ) ;
 
 
 CREATE TABLE Frontera
   (
-    Region_id_region  SMALLINT NOT NULL ,
-    Region_id_region1 SMALLINT NOT NULL
+    id_region  SMALLINT NOT NULL ,
+    id_region1 SMALLINT NOT NULL
   ) ;
-ALTER TABLE Frontera ADD CONSTRAINT Relation_2_PK PRIMARY KEY ( Region_id_region, Region_id_region1 ) ;
+ALTER TABLE Frontera ADD CONSTRAINT Relation_2_PK PRIMARY KEY ( id_region, id_region1 ) ;
 
 
 CREATE TABLE Frontras
@@ -75,21 +75,21 @@ CREATE TABLE Frontras
 
 CREATE TABLE Invento
   (
-    id_invento       SMALLINT NOT NULL ,
-    Descripcion      VARCHAR2 (100) NOT NULL ,
-    fec_publicacion  DATE ,
-    estado           CHAR (1 CHAR) NOT NULL ,
-    Region_id_region SMALLINT NOT NULL ,
-    Area_id_area     SMALLINT NOT NULL
+    id_invento      SMALLINT NOT NULL ,
+    Descripcion     VARCHAR2 (100) NOT NULL ,
+    fec_publicacion DATE ,
+    estado          CHAR (1 CHAR) NOT NULL ,
+    id_region       SMALLINT NOT NULL ,
+    id_area         SMALLINT NOT NULL
   ) ;
 ALTER TABLE Invento ADD CONSTRAINT Invento_PK PRIMARY KEY ( id_invento ) ;
 
 
 CREATE TABLE Inventor
   (
-    id_inventor      SMALLINT NOT NULL ,
-    nombre           VARCHAR2 (80) NOT NULL ,
-    Region_id_region SMALLINT NOT NULL
+    id_inventor SMALLINT NOT NULL ,
+    nombre      VARCHAR2 (80) NOT NULL ,
+    id_region   SMALLINT NOT NULL
   ) ;
 ALTER TABLE Inventor ADD CONSTRAINT Inventor_PK PRIMARY KEY ( id_inventor ) ;
 
@@ -130,8 +130,8 @@ CREATE TABLE Region
     nombre    VARCHAR2 (50) NOT NULL ,
     tipo      CHAR (1) NOT NULL ,
     area FLOAT ,
-    poblacion        INTEGER ,
-    Region_id_region SMALLINT
+    poblacion   INTEGER ,
+    id_region_1 SMALLINT
   ) ;
 ALTER TABLE Region ADD CONSTRAINT Region_PK PRIMARY KEY ( id_region ) ;
 
@@ -140,11 +140,11 @@ CREATE TABLE Representante
   (
     id_representante SMALLINT NOT NULL ,
     nombre           VARCHAR2 (50) NOT NULL ,
-    Region_id_region SMALLINT NOT NULL
+    id_region        SMALLINT NOT NULL
   ) ;
 CREATE UNIQUE INDEX Representante__IDX ON Representante
   (
-    Region_id_region ASC
+    id_region ASC
   )
   ;
 ALTER TABLE Representante ADD CONSTRAINT Representante_PK PRIMARY KEY ( id_representante ) ;
@@ -165,46 +165,46 @@ CREATE TABLE Trabajador
 ALTER TABLE Trabajador ADD CONSTRAINT Trabajador_PK PRIMARY KEY ( id_trabajador ) ;
 
 
-ALTER TABLE Area ADD CONSTRAINT Area_Trabajador_FK FOREIGN KEY ( Trabajador_id_trabajador ) REFERENCES Trabajador ( id_trabajador ) ON
+ALTER TABLE Area ADD CONSTRAINT Area_Trabajador_FK FOREIGN KEY ( id_trabajador ) REFERENCES Trabajador ( id_trabajador ) ON
 DELETE CASCADE ;
 
-ALTER TABLE AsigArea ADD CONSTRAINT AsigArea_Area_FK FOREIGN KEY ( Area_id_area ) REFERENCES Area ( id_area ) ON
+ALTER TABLE AsigArea ADD CONSTRAINT AsigArea_Area_FK FOREIGN KEY ( id_area ) REFERENCES Area ( id_area ) ON
 DELETE CASCADE ;
 
-ALTER TABLE AsigArea ADD CONSTRAINT AsigArea_Trabajador_FK FOREIGN KEY ( Trabajador_id_trabajador ) REFERENCES Trabajador ( id_trabajador ) ON
+ALTER TABLE AsigArea ADD CONSTRAINT AsigArea_Trabajador_FK FOREIGN KEY ( id_trabajador ) REFERENCES Trabajador ( id_trabajador ) ON
 DELETE CASCADE ;
 
-ALTER TABLE AsigInvento ADD CONSTRAINT AsigInvento_Invento_FK FOREIGN KEY ( Invento_id_invento ) REFERENCES Invento ( id_invento ) ON
+ALTER TABLE AsigInvento ADD CONSTRAINT AsigInvento_Invento_FK FOREIGN KEY ( id_invento ) REFERENCES Invento ( id_invento ) ON
 DELETE CASCADE ;
 
-ALTER TABLE AsigInvento ADD CONSTRAINT AsigInvento_Trabajador_FK FOREIGN KEY ( Trabajador_id_trabajador ) REFERENCES Trabajador ( id_trabajador ) ON
+ALTER TABLE AsigInvento ADD CONSTRAINT AsigInvento_Trabajador_FK FOREIGN KEY ( id_trabajador ) REFERENCES Trabajador ( id_trabajador ) ON
 DELETE CASCADE ;
 
-ALTER TABLE Det_invento ADD CONSTRAINT Det_invento_Invento_FK FOREIGN KEY ( Invento_id_invento ) REFERENCES Invento ( id_invento ) ON
+ALTER TABLE Det_invento ADD CONSTRAINT Det_invento_Invento_FK FOREIGN KEY ( id_invento ) REFERENCES Invento ( id_invento ) ON
 DELETE CASCADE ;
 
-ALTER TABLE Det_invento ADD CONSTRAINT Det_invento_Inventor_FK FOREIGN KEY ( Inventor_id_inventor ) REFERENCES Inventor ( id_inventor ) ON
+ALTER TABLE Det_invento ADD CONSTRAINT Det_invento_Inventor_FK FOREIGN KEY ( id_inventor ) REFERENCES Inventor ( id_inventor ) ON
 DELETE CASCADE ;
 
-ALTER TABLE Frontera ADD CONSTRAINT FK_ASS_5 FOREIGN KEY ( Region_id_region ) REFERENCES Region ( id_region ) ON
+ALTER TABLE Frontera ADD CONSTRAINT FK_ASS_5 FOREIGN KEY ( id_region ) REFERENCES Region ( id_region ) ON
 DELETE CASCADE ;
 
-ALTER TABLE Frontera ADD CONSTRAINT FK_ASS_6 FOREIGN KEY ( Region_id_region1 ) REFERENCES Region ( id_region ) ON
+ALTER TABLE Frontera ADD CONSTRAINT FK_ASS_6 FOREIGN KEY ( id_region1 ) REFERENCES Region ( id_region ) ON
 DELETE CASCADE ;
 
-ALTER TABLE Invento ADD CONSTRAINT Invento_Area_FK FOREIGN KEY ( Area_id_area ) REFERENCES Area ( id_area ) ON
+ALTER TABLE Invento ADD CONSTRAINT Invento_Area_FK FOREIGN KEY ( id_area ) REFERENCES Area ( id_area ) ON
 DELETE CASCADE ;
 
-ALTER TABLE Invento ADD CONSTRAINT Invento_Region_FK FOREIGN KEY ( Region_id_region ) REFERENCES Region ( id_region ) ON
+ALTER TABLE Invento ADD CONSTRAINT Invento_Region_FK FOREIGN KEY ( id_region ) REFERENCES Region ( id_region ) ON
 DELETE CASCADE ;
 
-ALTER TABLE Inventor ADD CONSTRAINT Inventor_Region_FK FOREIGN KEY ( Region_id_region ) REFERENCES Region ( id_region ) ON
+ALTER TABLE Inventor ADD CONSTRAINT Inventor_Region_FK FOREIGN KEY ( id_region ) REFERENCES Region ( id_region ) ON
 DELETE CASCADE ;
 
-ALTER TABLE Region ADD CONSTRAINT Region_Region_FK FOREIGN KEY ( Region_id_region ) REFERENCES Region ( id_region ) ON
+ALTER TABLE Region ADD CONSTRAINT Region_Region_FK FOREIGN KEY ( id_region_1 ) REFERENCES Region ( id_region ) ON
 DELETE CASCADE ;
 
-ALTER TABLE Representante ADD CONSTRAINT Representante_Region_FK FOREIGN KEY ( Region_id_region ) REFERENCES Region ( id_region ) ON
+ALTER TABLE Representante ADD CONSTRAINT Representante_Region_FK FOREIGN KEY ( id_region ) REFERENCES Region ( id_region ) ON
 DELETE CASCADE ;
 
 CREATE SEQUENCE Area_id_area_SEQ START WITH 1 NOCACHE ORDER ;

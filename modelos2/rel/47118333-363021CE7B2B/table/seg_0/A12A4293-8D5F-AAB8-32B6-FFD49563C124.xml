@@ -56,7 +56,7 @@
 <ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Region_id_region" id="AF4AAD84-18C3-7FB2-B182-E7B0EA1C73D8">
+<Column name="id_region" id="AF4AAD84-18C3-7FB2-B182-E7B0EA1C73D8">
 <createdBy>byron</createdBy>
 <createdTime>2016-10-14 22:41:28 UTC</createdTime>
 <generatorID>E7C9FD09-90A8-7660-BF1C-9B6DAD63CD5F</generatorID>
@@ -71,7 +71,7 @@
 <colAssociation fkAssociation="F8EF19F5-8CF1-A97F-9007-78ABDEDD4A8C" referredColumn="634EBCC4-1BF9-57B4-BB61-C35415544C47"/>
 </associations>
 </Column>
-<Column name="Area_id_area" id="9D08748E-0B3E-0708-F06C-0FA57DFFDCD1">
+<Column name="id_area" id="9D08748E-0B3E-0708-F06C-0FA57DFFDCD1">
 <createdBy>byron</createdBy>
 <createdTime>2016-10-14 22:41:28 UTC</createdTime>
 <generatorID>AAAA0C37-ED9E-05E0-5667-7ED8206FFB92</generatorID>

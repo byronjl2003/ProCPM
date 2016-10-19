@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="Invento_id_invento" id="F89302D6-7826-CE05-8368-7DDF2CDF1788">
+<Column name="id_invento" id="F89302D6-7826-CE05-8368-7DDF2CDF1788">
 <createdBy>byron</createdBy>
 <createdTime>2016-10-14 22:41:28 UTC</createdTime>
 <generatorID>941C4827-3247-DB71-84BA-3DC950265EFE</generatorID>
@@ -23,7 +23,7 @@
 <colAssociation fkAssociation="8BCF441E-FFC3-9374-2078-F97307E40B94" referredColumn="8042886E-DB3E-472F-EFB8-3FB611230B87"/>
 </associations>
 </Column>
-<Column name="Trabajador_id_trabajador" id="7351954A-FF46-0368-A8B1-B2AE54E2FB63">
+<Column name="id_trabajador" id="7351954A-FF46-0368-A8B1-B2AE54E2FB63">
 <createdBy>byron</createdBy>
 <createdTime>2016-10-14 22:41:28 UTC</createdTime>
 <generatorID>88036995-1948-DF37-9617-766608DCC395</generatorID>

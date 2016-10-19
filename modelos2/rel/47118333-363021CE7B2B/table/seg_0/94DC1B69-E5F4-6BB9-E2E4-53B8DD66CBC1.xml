@@ -68,7 +68,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Region_id_region" id="B3AE368F-1CC4-3E5C-8DC2-016E4590421C">
+<Column name="id_region_1" id="B3AE368F-1CC4-3E5C-8DC2-016E4590421C">
 <createdBy>byron</createdBy>
 <createdTime>2016-10-14 22:41:28 UTC</createdTime>
 <generatorID>3FB15232-97DA-21AD-F929-97A238BFCD58</generatorID>

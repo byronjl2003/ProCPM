@@ -115,6 +115,63 @@
                 </form>
         </div>
 	<div id="tabs-2">
+            <h3>Crea algun trabajador</h3>
+            <form>
+                <table id="2tabformtrabajadores"> 
+                    <tr>
+                        
+                        <th>Nombre:<input type="text" id="2txtnombre1" placeholder="Nombre"></input></th>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <th>Usuario <input type="text" id="2txtusuario1" placeholder="Usuario"></input></th>
+                        
+                    </tr>
+                    <tr>
+                        <th>Password <input type="password" id="2txtpass1" placeholder="Password"></input></th>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <th> <input type="password" id="2txtpass21" placeholder="Confirmacion"></input></th>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <th> Fecha de Inicio:<input type="date" id="2txtdate1" ></input></th>
+                        
+                    </tr>
+                    <tr>
+                        Tipo
+                        <th>
+                            <select id="2selecttipo1">
+                                <option value="A">Administrador</option>
+                                <option value="T">Trabajador</option>    
+                            </select>
+                        </th>
+                        
+                    </tr>
+                    <tr>
+                        Salario
+                        <th> <input type="number" id="2txtsalario1" placeholder="Salario"></input></th>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <th> Comision <input type="number" id="2txtcomision1" placeholder="Comision"></input></th>
+                        
+                    </tr>
+                </table>
+            </form>
+            
+            
+            
+            
+            
+            
+            
+            
         </div>
 	<div id="tabs-3">
         </div>

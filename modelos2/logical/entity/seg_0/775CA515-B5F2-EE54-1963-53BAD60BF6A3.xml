@@ -4,7 +4,7 @@
 <createdTime>2016-10-10 19:28:08 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2016-10-11 05:22:56 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,7 +32,7 @@
 <createdTime>2016-10-11 05:23:34 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,21 +45,21 @@
 <createdTime>2016-10-11 05:23:49 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ranking" id="226A4206-8BEA-A626-7A1C-F3CF2E4EC676">
 <createdBy>byron</createdBy>
 <createdTime>2016-10-14 19:32:49 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -73,7 +73,7 @@
 <generatorID>CBB5F72F-E251-5DBA-BB49-839161547C87</generatorID>
 <ownerDesignName>modelos2</ownerDesignName>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="true"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <referedAttribute>D3146A30-FD3B-BCA0-0B28-38D1DFD45C5B</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -87,9 +87,8 @@
 <createdBy>byron</createdBy>
 <createdTime>2016-10-11 05:23:27 UTC</createdTime>
 <ownerDesignName>modelos2</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="655F6228-5D42-2028-2D84-BD4E25827B60" value="false"/>
+<item key="47118333-430E-E3E6-4C6E-363021CE7B2B" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

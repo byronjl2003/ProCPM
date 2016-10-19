@@ -32,7 +32,7 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Region_id_region" id="CD1A1C1F-97DC-C7E4-6386-D9863B9BC516">
+<Column name="id_region" id="CD1A1C1F-97DC-C7E4-6386-D9863B9BC516">
 <createdBy>byron</createdBy>
 <createdTime>2016-10-14 22:41:28 UTC</createdTime>
 <generatorID>575A538C-8CF1-C9D8-497A-3BFDB51F6EF9</generatorID>

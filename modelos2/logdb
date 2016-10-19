@@ -1,0 +1,198 @@
+Table AREA creado.
+
+
+Unique index AREA__IDX creado.
+
+Table AREA alterado.
+
+
+Error que empieza en la línea: 25 del comando :
+CREATE TABLE Areas
+  ( nacion VARCHAR2 (50) , area FLOAT
+  ) 
+Informe de error -
+Error SQL: ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Table ASIGAREA creado.
+
+
+Table ASIGAREA alterado.
+
+Table ASIGINVENTO creado.
+
+
+Table ASIGINVENTO alterado.
+
+
+Error que empieza en la línea: 47 del comando :
+CREATE TABLE Continentes
+  (
+    continente VARCHAR2 (50) ,
+    nacion     VARCHAR2 (50) ,
+    capital    VARCHAR2 (50) ,
+    region     VARCHAR2 (50)
+  ) 
+Informe de error -
+Error SQL: ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Table DET_INVENTO creado.
+
+
+Table FRONTERA creado.
+
+
+Table FRONTERA alterado.
+
+
+Error que empieza en la línea: 71 del comando :
+CREATE TABLE Frontras
+  ( nacion VARCHAR2 (50) , nacionf VARCHAR2 (50)
+  ) 
+Informe de error -
+Error SQL: ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Table INVENTO creado.
+
+
+Table INVENTO alterado.
+
+
+Table INVENTOR creado.
+
+Table INVENTOR alterado.
+
+
+Error que empieza en la línea: 97 del comando :
+CREATE TABLE Patentes
+  (
+    codigopatente     INTEGER ,
+    aniopubli         SMALLINT ,
+    descrippatente    VARCHAR2 (300) ,
+    pais              VARCHAR2 (50) ,
+    rankingarea       SMALLINT ,
+    areainvestigacion VARCHAR2 (50) ,
+    descriparea       VARCHAR2 (300) ,
+    inventor          VARCHAR2 (50) ,
+    nacionalidad      VARCHAR2 (50)
+  ) 
+Informe de error -
+Error SQL: ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error que empieza en la línea: 111 del comando :
+CREATE TABLE Poblacion
+  ( nacion VARCHAR2 (50) , pobla INTEGER
+  ) 
+Informe de error -
+Error SQL: ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error que empieza en la línea: 116 del comando :
+CREATE TABLE Profesionales
+  (
+    profesional VARCHAR2 (50) ,
+    salario FLOAT ,
+    comision FLOAT ,
+    fecini DATE ,
+    puesto VARCHAR2 (10) ,
+    area   VARCHAR2 (50)
+  ) 
+Informe de error -
+Error SQL: ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Table REGION creado.
+
+Table REGION alterado.
+
+
+Table REPRESENTANTE creado.
+
+
+Unique index REPRESENTANTE__IDX creado.
+
+Table REPRESENTANTE alterado.
+
+
+Table TRABAJADOR creado.
+
+
+Table TRABAJADOR alterado.
+
+Table AREA alterado.
+
+
+Table ASIGAREA alterado.
+
+Table ASIGAREA alterado.
+
+
+Table ASIGINVENTO alterado.
+
+Table ASIGINVENTO alterado.
+
+
+Table DET_INVENTO alterado.
+
+Table DET_INVENTO alterado.
+
+
+Table FRONTERA alterado.
+
+Table FRONTERA alterado.
+
+
+Table INVENTO alterado.
+
+
+Table INVENTO alterado.
+
+
+Table INVENTOR alterado.
+
+Table REGION alterado.
+
+Table REPRESENTANTE alterado.
+
+
+Sequence AREA_ID_AREA_SEQ creado.
+
+Trigger AREA_ID_AREA_TRG compilado
+Sequence INVENTO_ID_INVENTO_SEQ creado.
+
+Trigger INVENTO_ID_INVENTO_TRG compilado
+
+
+Sequence INVENTOR_ID_INVENTOR_SEQ creado.
+
+Trigger INVENTOR_ID_INVENTOR_TRG compilado
+
+
+Sequence REGION_ID_REGION_SEQ creado.
+
+
+Trigger REGION_ID_REGION_TRG compilado
+
+Sequence REPRESENTANTE_ID_REPRESENTANTE creado.
+
+
+Trigger REPRESENTANTE_ID_REPRESENTANTE compilado
+
+Sequence TRABAJADOR_ID_TRABAJADOR_SEQ creado.
+
+
+Trigger TRABAJADOR_ID_TRABAJADOR_TRG compilado
+

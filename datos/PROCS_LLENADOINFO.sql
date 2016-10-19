@@ -28,17 +28,17 @@ BEGIN
       idregion.idd := dataa.ID_REGION;
     END LOOP;
     IF idregion.idd = 0 THEN
-      INSERT INTO REGION(nombre,tipo,region_id_region)values(dato.REGION,'R',idcontinente.idd) returning id_region INTO idregion.idd;
+      INSERT INTO REGION(nombre,tipo,id_region1)values(dato.REGION,'R',idcontinente.idd) returning id_region INTO idregion.idd;
     END IF;
     -----------------------------------------------------------------------------------------------------------------------------
     FOR dataa IN cursor2(dato.NACION,'N')LOOP
       idnacion.idd := dataa.ID_REGION; 
     END LOOP;
     IF idnacion.idd = 0 THEN
-      INSERT INTO REGION(nombre,tipo,region_id_region)values(dato.NACION,'N',idregion.idd) returning id_region INTO idnacion.idd;
+      INSERT INTO REGION(nombre,tipo,id_region1)values(dato.NACION,'N',idregion.idd) returning id_region INTO idnacion.idd;
     END IF;
     -----------------------------------------------------------------------------------------------------------------------------
-    INSERT INTO REGION(nombre,tipo,region_id_region)values(dato.CAPITAL,'A',idnacion.idd);
+    INSERT INTO REGION(nombre,tipo,id_region1)values(dato.CAPITAL,'A',idnacion.idd);
       
   END LOOP;
 END llenado_continente;
@@ -127,9 +127,9 @@ BEGIN
       INSERT INTO TRABAJADOR(NOMBRE,USUARIO,PASSWORD,FECHA_INI,TIPO,TIPO_JEFE,SALARIO,COMISION)
         VALUES(dato.PROFESIONAL,dato.PROFESIONAL,'123456',dato.FECINI,'T','3',dato.SALARIO,dato.COMISION)RETURNING ID_TRABAJADOR INTO idtrabajador.idtraba;
       
-      INSERT INTO AREA(NOMBRE,TRABAJADOR_ID_TRABAJADOR)VALUES(dato.AREA,idtrabajador.idtraba) RETURNING ID_AREA INTO idarea.ida;
+      INSERT INTO AREA(NOMBRE,ID_TRABAJADOR)VALUES(dato.AREA,idtrabajador.idtraba) RETURNING ID_AREA INTO idarea.ida;
       
-      INSERT INTO ASIGAREA(AREA_ID_AREA,TRABAJADOR_ID_TRABAJADOR,RANKING)VALUES(idarea.ida,idtrabajador.idtraba,5);
+      INSERT INTO ASIGAREA(ID_AREA,ID_TRABAJADOR,RANKING)VALUES(idarea.ida,idtrabajador.idtraba,5);
       
         
     ELSE
@@ -143,7 +143,7 @@ BEGIN
         --idarea.ida := 10;
       END LOOP;
       IF idarea.ida <> 0 THEN
-        INSERT INTO ASIGAREA(AREA_ID_AREA,TRABAJADOR_ID_TRABAJADOR,RANKING)VALUES(idarea.ida,idtrabajador.idtraba,5);
+        INSERT INTO ASIGAREA(ID_AREA,ID_TRABAJADOR,RANKING)VALUES(idarea.ida,idtrabajador.idtraba,5);
       END IF; 
       
          
@@ -156,9 +156,6 @@ END llenado_profesionales;
 create or replace PROCEDURE llenado_patentes
 AS
 cursor cursor1 IS SELECT * from PATENTES;
-
-type tipinvento IS RECORD(idinve INVENTO.ID_INVENTO%TYPE);
-idinvento tipinvento;
 
 cursor cursor2(nom varchar2) is select ID_REGION FROM region where nombre=nom and tipo='N';
 type tipe IS RECORD(idd REGION.ID_REGION%TYPE);
@@ -209,7 +206,7 @@ BEGIN
             END LOOP;
             
             IF idnacion.idd <> 0 THEN
-              INSERT INTO INVENTO(id_invento,descripcion,fec_publicacion,estado,region_id_region,area_id_area)
+              INSERT INTO INVENTO(id_invento,descripcion,fec_publicacion,estado,id_region,id_area)
               values(dato.CODIGOPATENTE,dato.DESCRIPPATENTE,TO_DATE(fechadate,'DD/MM/YYYY'),'P',idnacion.idd,idarea.ida);
               -------------------------------------SE CREA EL INVENTOR Y SE AGREGA A LA ENTIDAD DE ASIGACION------------------
                 idnacion.idd :=0;
@@ -218,9 +215,9 @@ BEGIN
                 END LOOP;
       
                 IF idnacion.idd <> 0 THEN  
-                  INSERT INTO INVENTOR(nombre,region_id_region)values(dato.INVENTOR,idnacion.idd)returning ID_INVENTOR INTO idinventor.idid;
+                  INSERT INTO INVENTOR(nombre,id_region)values(dato.INVENTOR,idnacion.idd)returning ID_INVENTOR INTO idinventor.idid;
                   
-                  INSERT INTO DET_INVENTO(inventor_id_inventor,invento_id_invento)values(idinventor.idid,dato.CODIGOPATENTE);
+                  INSERT INTO DET_INVENTO(id_inventor,id_invento)values(idinventor.idid,dato.CODIGOPATENTE);
                 ELSE
                   DBMS_OUTPUT.PUT_LINE('SE QUISO CREAR EL UN INVENTOR PERO LA NACIONALIDAD: '|| dato.NACIONALIDAD||'No existe');
                 END IF;
@@ -246,9 +243,9 @@ BEGIN
           idnacion.idd :=naciona.ID_REGION;
         END LOOP;
         IF idnacion.idd <> 0 THEN
-          INSERT INTO INVENTOR(nombre,region_id_region)values(dato.INVENTOR,idnacion.idd)returning ID_INVENTOR INTO idinventor.idid;
+          INSERT INTO INVENTOR(nombre,id_region)values(dato.INVENTOR,idnacion.idd)returning ID_INVENTOR INTO idinventor.idid;
                   
-          INSERT INTO DET_INVENTO(inventor_id_inventor,invento_id_invento)values(idinventor.idid,dato.CODIGOPATENTE);
+          INSERT INTO DET_INVENTO(id_inventor,id_invento)values(idinventor.idid,dato.CODIGOPATENTE);
         ELSE
           DBMS_OUTPUT.PUT_LINE('SE QUISO CREAR EL UN INVENTOR(PATENTE YA EXISTE) PERO LA NACIONALIDAD: '|| dato.NACIONALIDAD||'No existe');
         END IF;
@@ -257,3 +254,14 @@ BEGIN
   END LOOP;
   
 END llenado_patentes;
+
+---------------
+--exec llenado_continente();
+--exec llenado_frontera();
+--exec llenado_areas();
+--exec llenado_poblacion();
+--exec llenado_profesionales();
+--exec llenado_patentes();
+
+--insert into trabajador(nombre,usuario,password,fecha_ini,tipo,tipo_jefe,salario,comision)values('Saul','sawer@gmail.com','123456',TO_DATE(SYSDATE),'T','3',13000,11000);
+--commit;
