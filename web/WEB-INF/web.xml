@@ -24,6 +24,14 @@
         <servlet-name>RegInventor</servlet-name>
         <servlet-class>servlet.RegInventor</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Invento</servlet-name>
+        <servlet-class>servlet.InventoServ</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AsigInv</servlet-name>
+        <servlet-class>servlet.AsigInv</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Provisional</servlet-name>
         <url-pattern>/Provisional</url-pattern>
@@ -47,6 +55,14 @@
     <servlet-mapping>
         <servlet-name>RegInventor</servlet-name>
         <url-pattern>/RegInventor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Invento</servlet-name>
+        <url-pattern>/Invento</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AsigInv</servlet-name>
+        <url-pattern>/AsigInv</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
