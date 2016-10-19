@@ -19,7 +19,7 @@
         <div role="main" class="container theme-dropdown">
             <br>
             <div class="jumbotron">
-                <form class="form-horizontal" method="post" action="#">
+                <form class="form-horizontal" method="post" action="/ProCPM/Invento">
                     <fieldset>
                         <legend>Nuevo Invento</legend>
                         

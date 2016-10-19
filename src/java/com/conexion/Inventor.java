@@ -8,8 +8,10 @@ package com.conexion;
 import java.sql.CallableStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import oracle.jdbc.OracleTypes;
 
 /**
  *
@@ -22,6 +24,8 @@ public class Inventor {
     private Conexion conexion;
     private CallableStatement clstm;
     private ResultSet rset;
+    
+    private ArrayList<Inventor> inventores;
     
     public Inventor(){
         
@@ -70,6 +74,27 @@ public class Inventor {
         }
         
         return true;
+    }
+    
+    public ArrayList<Inventor> getInventores(){
+        inventores = new ArrayList<>();
+        conexion = new Conexion();
+        Inventor inv;
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call extraer_inventores(?)}");
+            clstm.registerOutParameter(1, OracleTypes.CURSOR);
+            clstm.execute();
+            rset = (ResultSet) clstm.getObject(1);
+            while(rset.next()){
+                inv = new Inventor();
+                inv.setId(rset.getInt(1));
+                inv.setNombre(rset.getString(2));
+                inventores.add(inv);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Inventor.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return inventores;
     }
     
 }

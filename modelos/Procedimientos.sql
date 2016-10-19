@@ -135,6 +135,28 @@ BEGIN
   INSERT INTO INVENTO(DESCRIPCION,ESTADO,ID_REGION,ID_AREA) values (descripcionIN,'E',regid,areaid)
   RETURNING ID_INVENTO INTO IDINV;
 END;
+
+--Extrae todos lo inventores de la base de datos
+CREATE OR REPLACE PROCEDURE extraer_inventores(
+  inventores OUT SYS_REFCURSOR
+)
+IS
+BEGIN
+  OPEN inventores FOR
+  SELECT I.ID_INVENTOR, I.NOMBRE
+  FROM INVENTOR I
+  ORDER BY I.NOMBRE;
+END;
+
+--Inserta relaciona los inventores con el invento
+CREATE OR REPLACE PROCEDURE rel_inv_inv (
+  cod_inventor IN INTEGER,
+  cod_invento IN INTEGER
+)
+IS
+BEGIN
+  INSERT INTO DET_INVENTO (ID_INVENTOR,ID_INVENTO) VALUES(cod_inventor,cod_invento);
+END;
 ----TRAE EL JEFE DE TODAS LAS AREAS
 CREATE OR REPLACE PROCEDURE get_JefeDeAreas
 (

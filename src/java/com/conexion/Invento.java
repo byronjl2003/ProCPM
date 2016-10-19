@@ -63,7 +63,9 @@ public class Invento {
     public void setFechaPub(Date fechaPub){
         this.fechaPub = fechaPub;
     }
-    
+    public void setId(int id){
+        this.id = id;
+    }
     public int guardarInvento(){
         id = -1;
         
@@ -81,5 +83,17 @@ public class Invento {
         }
         
         return id;
+    }
+    
+    public void setInventor(int idInventor){
+        conexion = new Conexion();
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call rel_inv_inv(?,?) }");
+            clstm.setInt(1, idInventor);
+            clstm.setInt(2, id);
+            clstm.execute();
+        } catch (SQLException ex) {
+            Logger.getLogger(Invento.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }
