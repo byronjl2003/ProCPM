@@ -9,8 +9,8 @@
 CREATE TABLE Area
   (
     id_area       SMALLINT NOT NULL ,
-    nombre        VARCHAR2 (50) NOT NULL ,
-    descripcion   VARCHAR2 (100) ,
+    nombre        VARCHAR2 (100) NOT NULL ,
+    descripcion   VARCHAR2 (300) ,
     ranking       SMALLINT ,
     id_trabajador SMALLINT NOT NULL
   ) ;
@@ -23,7 +23,7 @@ ALTER TABLE Area ADD CONSTRAINT Area_PK PRIMARY KEY ( id_area ) ;
 
 
 CREATE TABLE Areas
-  ( nacion VARCHAR2 (50) , area FLOAT
+  ( nacion VARCHAR2 (100) , area FLOAT
   ) ;
 
 
@@ -46,10 +46,10 @@ ALTER TABLE AsigInvento ADD CONSTRAINT AsigInvento_PK PRIMARY KEY ( id_invento, 
 
 CREATE TABLE Continentes
   (
-    continente VARCHAR2 (50) ,
-    nacion     VARCHAR2 (50) ,
-    capital    VARCHAR2 (50) ,
-    region     VARCHAR2 (50)
+    continente VARCHAR2 (100) ,
+    nacion     VARCHAR2 (100) ,
+    capital    VARCHAR2 (100) ,
+    region     VARCHAR2 (100)
   ) ;
 
 
@@ -69,14 +69,14 @@ ALTER TABLE Frontera ADD CONSTRAINT Relation_2_PK PRIMARY KEY ( id_region, id_re
 
 
 CREATE TABLE Frontras
-  ( nacion VARCHAR2 (50) , nacionf VARCHAR2 (50)
+  ( nacion VARCHAR2 (100) , nacionf VARCHAR2 (100)
   ) ;
 
 
 CREATE TABLE Invento
   (
     id_invento      SMALLINT NOT NULL ,
-    Descripcion     VARCHAR2 (100) NOT NULL ,
+    Descripcion     VARCHAR2 (300) NOT NULL ,
     fec_publicacion DATE ,
     estado          CHAR (1 CHAR) NOT NULL ,
     id_region       SMALLINT NOT NULL ,
@@ -88,7 +88,7 @@ ALTER TABLE Invento ADD CONSTRAINT Invento_PK PRIMARY KEY ( id_invento ) ;
 CREATE TABLE Inventor
   (
     id_inventor SMALLINT NOT NULL ,
-    nombre      VARCHAR2 (80) NOT NULL ,
+    nombre      VARCHAR2 (100) NOT NULL ,
     id_region   SMALLINT NOT NULL
   ) ;
 ALTER TABLE Inventor ADD CONSTRAINT Inventor_PK PRIMARY KEY ( id_inventor ) ;
@@ -99,17 +99,17 @@ CREATE TABLE Patentes
     codigopatente     INTEGER ,
     aniopubli         SMALLINT ,
     descrippatente    VARCHAR2 (300) ,
-    pais              VARCHAR2 (50) ,
+    pais              VARCHAR2 (100) ,
     rankingarea       SMALLINT ,
-    areainvestigacion VARCHAR2 (50) ,
+    areainvestigacion VARCHAR2 (100) ,
     descriparea       VARCHAR2 (300) ,
     inventor          VARCHAR2 (50) ,
-    nacionalidad      VARCHAR2 (50)
+    nacionalidad      VARCHAR2 (100)
   ) ;
 
 
 CREATE TABLE Poblacion
-  ( nacion VARCHAR2 (50) , pobla INTEGER
+  ( nacion VARCHAR2 (100) , pobla INTEGER
   ) ;
 
 
@@ -120,14 +120,14 @@ CREATE TABLE Profesionales
     comision FLOAT ,
     fecini DATE ,
     puesto VARCHAR2 (10) ,
-    area   VARCHAR2 (50)
+    area   VARCHAR2 (100)
   ) ;
 
 
 CREATE TABLE Region
   (
     id_region SMALLINT NOT NULL ,
-    nombre    VARCHAR2 (50) NOT NULL ,
+    nombre    VARCHAR2 (100) NOT NULL ,
     tipo      CHAR (1) NOT NULL ,
     area FLOAT ,
     poblacion   INTEGER ,
@@ -139,7 +139,7 @@ ALTER TABLE Region ADD CONSTRAINT Region_PK PRIMARY KEY ( id_region ) ;
 CREATE TABLE Representante
   (
     id_representante SMALLINT NOT NULL ,
-    nombre           VARCHAR2 (50) NOT NULL ,
+    nombre           VARCHAR2 (100) NOT NULL ,
     id_region        SMALLINT NOT NULL
   ) ;
 CREATE UNIQUE INDEX Representante__IDX ON Representante
