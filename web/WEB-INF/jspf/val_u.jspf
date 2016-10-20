@@ -17,11 +17,11 @@ public void valUsuario(HttpSession session, HttpServletResponse response) throws
     if(oid != null){
         rol = (char) orol;
         if(rol == 'A')
-            response.sendRedirect("/Apuestas/Admin/AInicio.jsp");
+            response.sendRedirect("/ProCPM/Admin/AInicio.jsp");
         else if(rol == ' ')
-            response.sendRedirect("/Apuestas");
+            response.sendRedirect("/ProCPM");
     }else{
-        response.sendRedirect("/Apuestas");
+        response.sendRedirect("/ProCPM");
     }
 }
 %>

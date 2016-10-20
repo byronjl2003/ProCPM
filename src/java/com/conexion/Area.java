@@ -25,6 +25,7 @@ public class Area {
     
     private int id;
     private String nombre;
+    private int ranking;
     private int idtrab;
     
     public Area(){
@@ -34,6 +35,21 @@ public class Area {
     public Area(int id, String nombre){
         this.id = id;
         this.nombre = nombre;
+    }
+    
+    public Area(int id, String nombre, int ranking){
+        this.id = id;
+        this.nombre = nombre;
+        this.ranking = ranking;
+    }
+    
+    
+    public void setRanking(int ranking){
+        this.ranking = ranking;
+    }
+    
+    public int getRanking(){
+        return ranking;
     }
     
     public int getId(){
@@ -60,5 +76,37 @@ public class Area {
         }
         
         return areas;
+    }
+    
+    public ArrayList<Area> getAreas(int idTrab){
+        areas = new ArrayList<>();
+        conexion = new Conexion();
+        
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call areas_trabajador(?,?)}");
+            clstm.registerOutParameter(1, OracleTypes.CURSOR);
+            clstm.setInt(2, idTrab);
+            clstm.execute();
+            rset = (ResultSet) clstm.getObject(1);
+            while(rset.next()){
+                areas.add(new Area(rset.getInt(1), rset.getString(2), rset.getInt(3)));
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Area.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return areas;
+    }
+    
+    public void cambiarRanking(int idTrab, int idArea, int vRanking){
+        conexion = new Conexion();
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call cambiar_ranking(?,?,?)}");
+            clstm.setInt(1, idTrab);
+            clstm.setInt(2, idArea);
+            clstm.setInt(3, vRanking);
+            clstm.execute();
+        } catch (SQLException ex) {
+            Logger.getLogger(Area.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }

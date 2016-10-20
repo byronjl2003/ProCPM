@@ -5,7 +5,7 @@
  */
 package servlet;
 
-import com.conexion.Inventor;
+import com.conexion.Area;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author wxjoy
  */
-public class RegInventor extends HttpServlet {
+public class CRanking extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -30,13 +30,12 @@ public class RegInventor extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String nombre = request.getParameter("nombre");
-        //String correo = request.getParameter("correo");
-        int idpais = Integer.parseInt(request.getParameter("pais"));
-        Inventor inv= new Inventor();
-        inv.setNombre(nombre);
-        inv.guardarInventor(idpais);
-        response.sendRedirect("/ProCPM/User/nInventor.jsp");
+        Area a = new Area();
+        int idTrab = (int)request.getSession().getAttribute("id");
+        int vRanking = Integer.parseInt(request.getParameter("vRank"));
+        int idArea = Integer.parseInt(request.getParameter("selectA"));
+        a.cambiarRanking(idTrab, idArea, vRanking);
+        response.sendRedirect("/ProCPM/User/Ranking.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -51,7 +50,7 @@ public class RegInventor extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.sendRedirect("/ProCPM/");
+        response.sendRedirect("/ProCPM");
     }
 
     /**
@@ -65,13 +64,11 @@ public class RegInventor extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        Object id = request.getSession().getAttribute("id");
-        char rol =(char) request.getSession().getAttribute("rol");
-        if(id!=null && rol =='T'){
-            this.processRequest(request, response);
-        }else{
+        Object oid = request.getSession().getAttribute("id");
+        if(oid!= null){
+            processRequest(request, response);
+        }else
             response.sendRedirect("/ProCPM");
-        }
     }
 
     /**

@@ -14,12 +14,12 @@ public void valAdmin(HttpSession session, HttpServletResponse response) throws S
     if( oid!=null){
         rol = (char) orol;
         if(rol == 'C'){
-            response.sendRedirect("/Apuestas/User/UInicio.jsp");
+            response.sendRedirect("/ProCPM/User/UInicio.jsp");
         }else if(rol == ' '){
-            response.sendRedirect("/Apuestas");
+            response.sendRedirect("/ProCPM");
         }
     }else{
-        response.sendRedirect("/Apuestas");
+        response.sendRedirect("/ProCPM");
     }
 }
 %>

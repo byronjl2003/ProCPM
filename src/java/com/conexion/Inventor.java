@@ -63,10 +63,10 @@ public class Inventor {
     public boolean guardarInventor(int codPais){
         conexion = new Conexion();
         try {
-            clstm = conexion.getConexion().prepareCall("{ call crear_inventor(?,?,?)}");
+            clstm = conexion.getConexion().prepareCall("{ call crear_inventor(?,?)}");
             clstm.setString(1, nombre);
-            clstm.setString(2, correo);
-            clstm.setInt(3, codPais);
+            //clstm.setString(2, correo);
+            clstm.setInt(2, codPais);
             clstm.execute();
         } catch (SQLException ex) {
             Logger.getLogger(Inventor.class.getName()).log(Level.SEVERE, null, ex);
