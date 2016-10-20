@@ -31,7 +31,7 @@
                     <ul class="dropdown-menu">
                         <li>
                             <a href="/ProCPM/User/patentar.jsp">
-                                Aprovar Patente
+                                Aprobar Patente
                             </a>
                         </li>
                         <li role="separator" class="divider"></li>

@@ -157,7 +157,7 @@ BEGIN
   INSERT INTO DET_INVENTO (ID_INVENTOR,ID_INVENTO) VALUES(cod_inventor,cod_invento);
 END;
 
---Extaerr areas sengun asignacion e id de usuario
+--Extaer areas sengun asignacion e id de usuario
 
 CREATE OR REPLACE PROCEDURE areas_trabajador(
   areasT OUT SYS_REFCURSOR,
@@ -172,9 +172,9 @@ BEGIN
   ORDER BY A.NOMBRE;
 END;
 
-/********************************
-  cambia el valor del ranking
-*********************************************/
+/*******************************************************************************
+cambia el valor del ranking
+*******************************************************************************/
 CREATE OR REPLACE PROCEDURE cambiar_ranking(
   codTrab IN INTEGER,
   codArea IN INTEGER,
@@ -186,6 +186,37 @@ BEGIN
   SET RANKING = vRanking
   WHERE ID_AREA = codArea AND ID_TRABAJADOR = codTrab;
 END;
+
+/*******************************************************************************
+Extrae Todos los inventos no patentatos relacionados con el trabajador
+*******************************************************************************/
+CREATE OR REPLACE PROCEDURE inventos_trabajador(
+  codTrabajador IN INTEGER,
+  inventosT OUT SYS_REFCURSOR
+)
+IS
+BEGIN
+  OPEN inventosT FOR
+  SELECT I.ID_INVENTO, I.DESCRIPCION
+  FROM INVENTO I, ASIGINVENTO S
+  WHERE I.ID_INVENTO = S.ID_INVENTO AND S.ID_TRABAJADOR = codTrabajador;
+END;
+/*******************************************************************************
+Este procedimiento cambia el estado del invento a patentado
+*******************************************************************************/
+
+CREATE OR REPLACE PROCEDURE aprobar_invento(
+  codInv IN INTEGER
+)
+IS
+BEGIN
+  UPDATE INVENTO I
+  SET 
+    I.ESTADO = 'P',
+    I.FEC_PUBLICACION = SYSDATE
+  WHERE I.ID_INVENTO = codInv;
+END;
+
 ----TRAE EL JEFE DE TODAS LAS AREAS
 CREATE OR REPLACE PROCEDURE get_JefeDeAreas
 (

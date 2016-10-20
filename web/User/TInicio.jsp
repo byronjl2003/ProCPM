@@ -16,8 +16,8 @@
         <div role="main" class="container theme-dropdown">
             <br>
             <div class="jumbotron">
-                <h1>Hello World!</h1>
-                <%=session.getAttribute("nombre")%>
+                <h1>Hola!</h1>
+                <h2><%=session.getAttribute("nombre")%></h2>
             </div>
         </div>
         <%@include file="../WEB-INF/jspf/scriptsu.jspf"%>

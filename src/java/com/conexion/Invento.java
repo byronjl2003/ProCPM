@@ -9,6 +9,7 @@ import java.sql.CallableStatement;
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import oracle.jdbc.OracleTypes;
@@ -27,6 +28,7 @@ public class Invento {
     private char estado;
     private int regId;
     private int areaId;
+    private ArrayList<Invento> inventos;
     
     public Invento(){}
     
@@ -95,5 +97,39 @@ public class Invento {
         } catch (SQLException ex) {
             Logger.getLogger(Invento.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+    
+    public ArrayList<Invento> getInventosAsig(int idTrab){
+        inventos = new ArrayList<>();
+        conexion = new Conexion();
+        Invento inv ;
+        try {
+            clstm  = conexion.getConexion().prepareCall("{ call inventos_trabajador(?,?)}");
+            clstm.setInt(1, idTrab);
+            clstm.registerOutParameter(2, OracleTypes.CURSOR);
+            clstm.execute();
+            rset =(ResultSet) clstm.getObject(2);
+            while(rset.next()){
+                inv = new Invento();
+                inv.setId(rset.getInt(1));
+                inv.setDescripcion(rset.getString(2));
+                inventos.add(inv);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Invento.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return inventos;
+    }
+    
+    public void aproInvento(int idInv){
+        conexion = new Conexion();
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call aprobar_invento(?)}");
+            clstm.setInt(1, idInv);
+            clstm.execute();
+        } catch (SQLException ex) {
+            Logger.getLogger(Invento.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
 }

@@ -36,6 +36,10 @@
         <servlet-name>CRanking</servlet-name>
         <servlet-class>servlet.CRanking</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AprobInvento</servlet-name>
+        <servlet-class>servlet.AprobInvento</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Provisional</servlet-name>
         <url-pattern>/Provisional</url-pattern>
@@ -71,6 +75,10 @@
     <servlet-mapping>
         <servlet-name>CRanking</servlet-name>
         <url-pattern>/CRanking</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AprobInvento</servlet-name>
+        <url-pattern>/AprobInvento</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
