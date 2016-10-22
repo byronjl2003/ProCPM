@@ -35,9 +35,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Correo</td>
+                            <td>Usuario</td>
                             <td>
-                                <input name="uCorreo" type="email" value="<%=u.getCorreo()%>" required>
+                                <input name="uCorreo" type="text" value="<%=u.getCorreo()%>" required>
                             </td>
                         </tr>
                         <tr>

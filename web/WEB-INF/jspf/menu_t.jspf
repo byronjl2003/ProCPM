@@ -27,19 +27,19 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equipos<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-2x fa-edit"></span>Editar<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Todos</a></li>
-                        <li><a href="/Apuestas/User/buscarEquipo.jsp">Buscar</a></li>
+                        <li>
+                            <a href="/ProCPM/User/patentar.jsp">
+                                Aprobar Patente
+                            </a>
+                        </li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/Apuestas/User/equipos.jsp?grupo=A&eq=0">Grupo A</a></li>
-                        <li><a href="/Apuestas/User/equipos.jsp?grupo=B&eq=0">Grupo B</a></li>
-                        <li><a href="/Apuestas/User/equipos.jsp?grupo=C&eq=0">Grupo C</a></li>
-                        <li><a href="/Apuestas/User/equipos.jsp?grupo=D&eq=0">Grupo D</a></li>
-                        <li><a href="/Apuestas/User/equipos.jsp?grupo=E&eq=0">Grupo E</a></li>
-                        <li><a href="/Apuestas/User/equipos.jsp?grupo=F&eq=0">Grupo F</a></li>
-                        <li><a href="/Apuestas/User/equipos.jsp?grupo=G&eq=0">Grupo G</a></li>
-                        <li><a href="/Apuestas/User/equipos.jsp?grupo=H&eq=0">Grupo H</a></li>
+                        <li>
+                            <a href="/ProCPM/User/Ranking.jsp">
+                                Cambiar ranking
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="dropdown">

@@ -29,23 +29,26 @@
                                 Nombre: 
                             </td>
                             <td>
-                                <input name="nombre" type="text" maxlength="50" required>
+                                <input class="form-control" name="nombre" type="text" maxlength="50" required>
                             </td>
                         </tr>
-                        <tr>
+                        <tr><!--
                             <td>
                                 Correo:
                             </td>
                             <td>
                                 <input name="correo" type="email" maxlength="50" required>
                             </td>
+                            -->
                         </tr>
                         <tr>
                             <td>
                                 Pais:
                             </td>
                             <td>
-                                <%=getPaises()%>
+                                <select name="pais" class="form-control" required>
+                                    <%=getPaises()%>
+                                </select>
                             </td>
                         </tr>
                         <tr>
@@ -70,7 +73,7 @@ public String getPaises(){
     ArrayList<Region> paises;
     Region p;
     paises = new Region().getPaises();
-    sb.append("<select name=\"pais\">\n");
+    //sb.append("<select name=\"pais\">\n");
     if(paises.size()>0){
         for(int i = 0; i<paises.size(); i++){
             p = paises.get(i);
@@ -86,7 +89,7 @@ public String getPaises(){
             .append("</option>\n");
     }
 
-    sb.append("</select>");
+    //sb.append("</select>");
     return sb.toString();
 }
 %>

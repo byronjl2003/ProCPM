@@ -24,8 +24,8 @@
                 <form method="post" action="/ProCPM/Login" >
                     <table>
                         <tr>
-                            <td>Correo</td>
-                            <td><input name="correo" type="email" required placeholder="micorreo@dominio.com"></td>
+                            <td>Usuario</td>
+                            <td><input name="correo" type="text" required placeholder="micorreo@dominio.com"></td>
                         </tr>
                         <tr>
                             <td>Clave</td>

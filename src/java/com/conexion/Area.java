@@ -25,7 +25,9 @@ public class Area {
     
     private int id;
     private String nombre;
+
     private String descripcion;
+
     private int ranking;
     private int idtrab;
     
@@ -36,6 +38,21 @@ public class Area {
     public Area(int id, String nombre){
         this.id = id;
         this.nombre = nombre;
+    }
+    
+    public Area(int id, String nombre, int ranking){
+        this.id = id;
+        this.nombre = nombre;
+        this.ranking = ranking;
+    }
+    
+    
+    public void setRanking(int ranking){
+        this.ranking = ranking;
+    }
+    
+    public int getRanking(){
+        return ranking;
     }
     
     public int getId(){
@@ -67,6 +84,7 @@ public class Area {
         return areas;
     }
     
+
     public void setArea(Area area)
     {
         conexion = new Conexion();
@@ -100,12 +118,37 @@ public class Area {
                 this.setDescripcion(rset.getString(3));
                 this.setRanking(rset.getInt(4));
                 this.setIdtrab(rset.getInt(5));
-                
+            }
+             }
+        catch (SQLException ex) {
+            Logger.getLogger(Area.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        
+       
+        
+    }
+
+    public ArrayList<Area> getAreas(int idTrab){
+        areas = new ArrayList<>();
+        conexion = new Conexion();
+        
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call areas_trabajador(?,?)}");
+            clstm.registerOutParameter(1, OracleTypes.CURSOR);
+            clstm.setInt(2, idTrab);
+            clstm.execute();
+            rset = (ResultSet) clstm.getObject(1);
+            while(rset.next()){
+                areas.add(new Area(rset.getInt(1), rset.getString(2), rset.getInt(3)));
+
             }
         } catch (SQLException ex) {
             Logger.getLogger(Area.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
+              return areas;
+    
        
         
     }
@@ -189,19 +232,8 @@ public class Area {
         this.descripcion = descripcion;
     }
 
-    /**
-     * @return the ranking
-     */
-    public int getRanking() {
-        return ranking;
-    }
 
-    /**
-     * @param ranking the ranking to set
-     */
-    public void setRanking(int ranking) {
-        this.ranking = ranking;
-    }
+
 
     /**
      * @return the idtrab
@@ -218,4 +250,20 @@ public class Area {
     }
     
     
+
+  
+    
+    public void cambiarRanking(int idTrab, int idArea, int vRanking){
+        conexion = new Conexion();
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call cambiar_ranking(?,?,?)}");
+            clstm.setInt(1, idTrab);
+            clstm.setInt(2, idArea);
+            clstm.setInt(3, vRanking);
+            clstm.execute();
+        } catch (SQLException ex) {
+            Logger.getLogger(Area.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
 }
