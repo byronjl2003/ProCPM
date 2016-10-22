@@ -10,3 +10,5 @@
 <link rel="stylesheet" href="../fonts.css">
 <link href="../extraStyle.css" rel="stylesheet">
 
+<link href="../ui/jquery-ui.css" rel="stylesheet">
+

@@ -21,6 +21,6 @@
                 <h1>Hola administrador!</h1>
             </div>
         </div>
-        <%@include file="../WEB-INF/jspf/scriptsu.jspf" %>
+        <%@include file="../WEB-INF/jspf/scriptsa.jspf" %>
     </body>
 </html>

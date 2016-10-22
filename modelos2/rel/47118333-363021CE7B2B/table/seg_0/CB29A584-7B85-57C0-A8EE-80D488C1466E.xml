@@ -40,6 +40,18 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1F43B64D-115C-273B-5DCA-3EF0D8CF7D0B" name="Det_invento_PK">
+<createdBy>byron</createdBy>
+<createdTime>2016-10-22 04:11:11 UTC</createdTime>
+<ownerDesignName>modelos2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF52BD84-BF3F-98D6-0CF5-B05E0BF70174"/>
+<colUsage columnID="79B8C3B5-1A47-C0D6-A45A-4B7AF72EBEAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="2603FC56-A32A-5EB9-CFA1-95650F57DBF7" name="Det_invento_Inventor_FK">
 <createdBy>byron</createdBy>
 <createdTime>2016-10-14 22:41:28 UTC</createdTime>

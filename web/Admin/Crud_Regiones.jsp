@@ -4,60 +4,18 @@
     Author     : byron
 --%>
 
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@include file="../WEB-INF/jspf/val_a.jspf" %>
+<% valAdmin(session,response);%>
 <!DOCTYPE html>
-<!doctype html>
-<html lang="us">
+<html>    
 <head>
-	<meta charset="utf-8">
-	<title>jQuery UI Example Page</title>
-        <link href="../ui/jquery-ui.css" rel="stylesheet">
-	
-	<style>
-	body{
-		font-family: "Trebuchet MS", sans-serif;
-		margin: 50px;
-	}
-	.demoHeaders {
-		margin-top: 2em;
-	}
-	#dialog-link {
-		padding: .4em 1em .4em 20px;
-		text-decoration: none;
-		position: relative;
-	}
-	#dialog-link span.ui-icon {
-		margin: 0 5px 0 0;
-		position: absolute;
-		left: .2em;
-		top: 50%;
-		margin-top: -8px;
-	}
-	#icons {
-		margin: 0;
-		padding: 0;
-	}
-	#icons li {
-		margin: 2px;
-		position: relative;
-		padding: 4px 0;
-		cursor: pointer;
-		float: left;
-		list-style: none;
-	}
-	#icons span.ui-icon {
-		float: left;
-		margin: 0 4px;
-	}
-	.fakewindowcontain .ui-widget-overlay {
-		position: absolute;
-	}
-	select {
-		width: 200px;
-	}
-	</style>
+	<%@include file="../WEB-INF/jspf/headera.jspf" %>
+        <title>Inicio-Admin</title>
+       
 </head>
 <body>
-
+<%@include file="../WEB-INF/jspf/menu_a.jspf"%>
 <h1>CRUDS!</h1>
 
 
@@ -70,117 +28,351 @@
 
 <div id="tabs">
 	<ul>
+                <li><a href="#tabs-0">Patentes</a></li>
 		<li><a href="#tabs-1">Regiones</a></li>
-		<li><a href="#tabs-2">Trabajadores</a></li>
-		<li><a href="#tabs-3">Areas-Investigacion</a></li>
+		<li><a href="#tabs-2">Profesionales</a></li>
+		<li><a href="#tabs-3">Areas-Cientificas</a></li>
 	</ul>
+        <div id="tabs-0">
+            
+            
+            
+            
+            
+        </div>
 	<div id="tabs-1">
-            <form id="1FormCreaRegion">
-                    <table cellpadding="5" >
+            <h3>CREA UNA REGION!</h3>
+            
+                    <table cellpadding="5" align="center" >
                         <tr>
                             <td>Nombre:</td>
-                            <td><input id="1txtnombre" name="nombre" type="text" required></td>
+                            <td><input id="1txtnombreregis" name="nombre" type="text" required class="form-control"></td>
                         </tr>
                         <tr>
                             <td>Tipo:</td>
                             <td>
-                                <select id="1selecttiporegion">
-                                    <option value="C">Continente</option>
-                                    <option value="R">Region</option>
-                                    <option value="N">Nacion</option>
-                                    <option value="A">Capital</option>
-                                </select>
+                                
+                                    <select id="selecttiporegion" class="form-control" >
+                                        <option value="C">Continente</option>
+                                        <option value="R">Region</option>
+                                        <option value="N">Nacion</option>
+                                        <option value="A">Capital</option>
+                                    </select>
+                                </div>
+                                </div>
+
                             </td>
                         </tr>
                         <tr>
-                        <div id="1divareapoblacion">
+                            <td>                 
+                                <div id="1divarea0">
+                                    
+                                </div>
+                            </td>
+                            <td>                 
+                                <div id="1divarea">
+                                    
+                                </div>
+                            </td>
                             
-                        </div>
                         </tr>
                         <tr>
-                            <div id="1divcontenedorregion">
+                            <td>                     
+                                <div id="1divpoblacion0">
+                                    
+                                </div>
+                                </td>
+                                <td>                     
+                                <div id="1divpoblacion">
+                                    
+                                </div>
+                                </td>
                             
-                            </div>
-                           
                         </tr>
-                        
                         <tr>
-                            <td></td>
+                            <td>Region Contenedora:</td>
                             <td>
-                                <input class="btn btn-success" type="submit" value="Crear">
+                                    <div id="1divcontenedorregion">
+                                        
+                                     </div>
+                                    
+                                
+                           </td>
+                        </tr>
+                        <tr>
+                            <td>Fronteras:</td>
+                            <td>
+                             
+                                        <select name="selectregionfrontera" id="selectregionfrontera" multiple="multiple">
+                                        </select>
                                 
                             </td>
                         </tr>
+                        
+                        <tr>
+                            <td>
+                        <button id="btnsubmitregion" class="btn btn-success" ><span class="fa fa-plus"></span>Crear</button>
+                        </td>
+                        </tr>
                     </table>
-                </form>
+                    <div id="divrespsubmitregion">
+                    </div>
+                
+            <h4>Modificaion y Eliminacion</h4>
+            
+                    <table cellpadding="5" align="center" >
+                        
+                        <tr>
+                            <td>
+                                <select id="1selecttiporegionmod" class="form-control" >
+                                    <option value="C">Continente</option>
+                                        <option value="R">Region</option>
+                                        <option value="N">Nacion</option>
+                                        <option value="A">Capital</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div id="1div_1selectregionmod">
+                                        
+                                </div>
+                               
+                            </td>
+                        </tr>
+                       
+                       
+                    </table>
+                    <br>
+                    <div id="1divinforegion">
+                        
+                    </div>
+            
         </div>
 	<div id="tabs-2">
             <h3>Crea algun trabajador</h3>
             <form>
                 <table id="2tabformtrabajadores"> 
                     <tr>
-                        
-                        <th>Nombre:<input type="text" id="2txtnombre1" placeholder="Nombre"></input></th>
-                        
-                    </tr>
-                    <tr>
-                        
-                        <th>Usuario <input type="text" id="2txtusuario1" placeholder="Usuario"></input></th>
+                        <td>Nombre:</td>
+                        <td><input class="form-control" type="text" id="2txtnombre1" placeholder="Nombre"></input></td>
                         
                     </tr>
                     <tr>
-                        <th>Password <input type="password" id="2txtpass1" placeholder="Password"></input></th>
+                        <td>Usuario:</td>
+                        <td><input class="form-control" type="text" id="2txtusuario1" placeholder="Usuario"></input></td>
                         
                     </tr>
                     <tr>
-                        
-                        <th> <input type="password" id="2txtpass21" placeholder="Confirmacion"></input></th>
-                        
-                    </tr>
-                    <tr>
-                        
-                        <th> Fecha de Inicio:<input type="date" id="2txtdate1" ></input></th>
+                        <td>Password:</td>
+
+                        <td><input class="form-control" type="password" id="2txtpass1" placeholder="Password"></input></td>
                         
                     </tr>
                     <tr>
-                        Tipo
-                        <th>
-                            <select id="2selecttipo1">
+                        <td>Confirmacion:</td>
+
+                        <td><input class="form-control" type="password" id="2txtpass21" placeholder="Confirmacion"></input></td>
+                        
+                    </tr>
+                    <tr>
+                        <td> Fecha Ini:</td>
+
+                        <td><input class="form-control" type="date" id="2txtdate1" ></input></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Tipo:</td>
+                        <td>
+                            <select class="form-control" id="2selecttipo1">
                                 <option value="A">Administrador</option>
                                 <option value="T">Trabajador</option>    
                             </select>
-                        </th>
+                        </td>
                         
                     </tr>
                     <tr>
-                        Salario
-                        <th> <input type="number" id="2txtsalario1" placeholder="Salario"></input></th>
+                        <td>Salario:</td>
+                        <td><input class="form-control" type="number" id="2txtsalario1" placeholder="Salario"></input></td>
                         
                     </tr>
                     <tr>
-                        
-                        <th> Comision <input type="number" id="2txtcomision1" placeholder="Comision"></input></th>
+                        <td>Comision:</td>
+                        <td><input class="form-control" type="number" id="2txtcomision1" placeholder="Comision"></input></th>
                         
                     </tr>
+                    <tr>
+                        <td>Puesto</td>
+                        <td>
+                             <div class="checkbox">
+                                <label for="checkboxes-1">
+                                    <input type="checkbox" name="checkboxes" id="2checkbox1" value="1">
+                                Jefe
+                                </label>
+                            </div>
+                            
+                        </td>
+                        <td>
+                            <div id="2divareasjefe">
+                                
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                             <div class="checkbox">
+                                <label for="checkboxes-1">
+                                    <input type="checkbox" name="checkboxes" id="2checkbox2" value="1">
+                                Empleado
+                                </label>
+                            </div>
+                            
+                        </td>
+                        <td>
+                            <div id="2divareasemp">
+                                
+                            </div>
+                        </td>
+                        
+                    </tr>
+                    
+                    
                 </table>
             </form>
+            <button id="2btnsubmitprofes3" class="btn btn-success" ><span class="fa fa-plus"></span>Crear</button>
+            <h4>Modificacion y Eliminacion</h4>
+            <br>
+            <button id="2btngetprofes" class="btn btn-success" ><span class="fa fa-plus"></span>Get</button>
+            <select id="2selectprofesmod">
+                
+            </select>
+            <div id="2divinfoprofes">
+                
+            </div>
+            <div id="2divinfosubmit">
+            </div>
             
-            
-            
-            
+           
             
             
             
             
         </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 	<div id="tabs-3">
+            
+            
+            <h3>CREA UN AREA-CIENTIFICA</h3>
+            
+                    <table cellpadding="5" align="center" >
+                        <tr>
+                            <td>Nombre:</td>
+                            <td><input id="3txtnombreregis" name="nombre" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Descripcion:</td>
+                            <td>
+                                 <textarea class="form-control" id="3txtdescripcionregis">Pon una descripcion</textarea>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ranking</td>
+                                             
+                                <td><input id="3txtrankingregis"type="number" class="form-control"></td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox">
+                                <label for="checkboxes-1">
+                                    <input type="checkbox" name="checkboxes" id="3checkbox1" value="1">
+                                Asignar Jefe?
+                                </label>
+                            </div>
+                                
+                            </td>
+                            <td>                     
+                                <div id="3divtrabajadores">
+                                    
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td>
+                         <button id="3btnsubareas" class="btn btn-success" ><span class="fa fa-plus"></span>Crear</button>
+                        </td>
+                        </tr>
+                    </table>
+                    <div id="3divrespsubmitarea">
+                    </div>
+                
+            <h4>Modificaion y Eliminacion</h4>
+            <br>
+            <button id="3btngetareas" class="btn btn-success" ><span class="fa fa-plus"></span>Get</button>
+            <select id="3selectareamod">
+                
+            </select>
+            <div id="3divinfoarea">
+                
+            </div>
+            <div id="3divinfosubmit">
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         </div>
 </div>
 
 
 <br>
 
-
+<%@include file="../WEB-INF/jspf/scriptsa.jspf" %>
 <script src="../ui/external/jquery/jquery.js"></script>
 <script src="../ui/jquery-ui.js"></script>
 <script>

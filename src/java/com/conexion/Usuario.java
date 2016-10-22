@@ -5,6 +5,7 @@
  */
 package com.conexion;
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import oracle.jdbc.OracleTypes;
@@ -21,6 +22,12 @@ public class Usuario {
     private char rol;
     private String correo;
     private Date fechaInicio;
+    private String password;
+    private char tipo;
+    private char tipojefe;
+    private float salario;
+    private float comision;
+            
     public Usuario(){
         
     }
@@ -57,7 +64,7 @@ public class Usuario {
         return rol;
     }
     public int loginUsuario(String correo, String clave){
-        id= -1;
+        setId(-1);
         conexion = new Conexion();
         String tmp;
         try {
@@ -68,10 +75,10 @@ public class Usuario {
             clstm.execute();
             rset =(ResultSet) clstm.getObject(3);
             if(rset.next()){
-                id = rset.getInt(1);
-                nombre = rset.getString(2);
+                setId(rset.getInt(1));
+                setNombre(rset.getString(2));
                 tmp = rset.getString(3);
-                this.rol = tmp.charAt(0);
+                this.setRol(tmp.charAt(0));
             }
         } catch (SQLException ex) {
             Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
@@ -111,8 +118,8 @@ public class Usuario {
             clstm.execute();
             rset = (ResultSet) clstm.getObject(2);
             rset.next();
-            nombre = rset.getString(1);
-            correo = rset.getString(2);
+            setNombre(rset.getString(1));
+            setCorreo(rset.getString(2));
         } catch (SQLException ex) {
             Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -142,7 +149,7 @@ public class Usuario {
         try {
             clstm = conexion.getConexion().prepareCall("{ call act_d_usuario(?,?,?,?) }");
             clstm.setInt(1, id);
-            clstm.setString(2, nombre);
+            clstm.setString(2, getNombre());
             clstm.setString(3, correo);
             clstm.setString(4, cambio);
             return !clstm.execute();
@@ -150,5 +157,257 @@ public class Usuario {
             Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
         }
         return false;
+    }
+    
+    public void set_trabajador(String nombre,String usuario,String pass,String date,char tip,char tipj,float salario,float comision)
+    {
+        conexion = new Conexion();
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call set_trabajador(?,?,?,?,?,?,?,?) }");
+            clstm.setString(1, nombre);
+            clstm.setString(2,usuario);
+            clstm.setString(2,pass);
+            clstm.setDate(4,java.sql.Date.valueOf(date));
+            clstm.setString(5,String.valueOf(tip));
+            clstm.setString(6,String.valueOf(tipj));
+            clstm.setFloat(7,salario);
+            clstm.setFloat(8,comision);
+            
+            clstm.execute();
+        } catch (SQLException ex) {
+            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
+    
+    
+    public ArrayList<Usuario> get_trabajadores()
+    {
+        ArrayList<Usuario>lista = new ArrayList();
+        conexion = new Conexion();
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call get_trabajadores(?) }");
+            clstm.registerOutParameter(1, OracleTypes.CURSOR);
+            
+            clstm.execute();
+            rset =(ResultSet) clstm.getObject(1);
+            while(rset.next()){
+              Usuario usu = new Usuario();
+              usu.setId(rset.getInt(1));
+              usu.setNombre(rset.getString(2));
+              lista.add(usu);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return lista;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    public ArrayList<Usuario> get_trabajadorestipo3()
+    {
+        ArrayList<Usuario>lista = new ArrayList();
+        conexion = new Conexion();
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call get_trabajadoresNoJefe(?) }");
+            clstm.registerOutParameter(1, OracleTypes.CURSOR);
+            
+            clstm.execute();
+            rset =(ResultSet) clstm.getObject(1);
+            while(rset.next()){
+              Usuario usu = new Usuario();
+              usu.setId(rset.getInt(1));
+              usu.setNombre(rset.getString(2));
+              lista.add(usu);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return lista;
+    }
+    
+    public void getInfo(int idusu)
+    {
+        conexion = new Conexion();
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call get_infotrabajador(?,?) }");
+            clstm.setInt(1, idusu);
+            clstm.registerOutParameter(2, OracleTypes.CURSOR);
+            
+            clstm.execute();
+            rset =(ResultSet) clstm.getObject(2);
+            while(rset.next()){
+              
+              this.setId(rset.getInt(1));
+              this.setNombre(rset.getString(2));
+              this.setCorreo(rset.getString(3));
+              this.setPassword(rset.getString(4));
+              this.setFechaInicio(rset.getDate(5));
+              this.setTipo(rset.getString(6).charAt(0));
+              this.setTipojefe(rset.getString(7).charAt(0));
+              this.setSalario(rset.getFloat(8));
+              this.setComision(rset.getFloat(9));
+              
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public void Mtrabajador( Usuario usu)
+    {
+       conexion = new Conexion();
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call a_M_trabajador(?,?,?,?,?,?,?,?,?) }");
+            clstm.setString(1,usu.getNombre());
+            clstm.setString(2,usu.getCorreo());
+            clstm.setString(3,usu.getPassword());
+            clstm.setDate(4,usu.getFechaInicio());
+            //java.sql.Date.valueOf()
+            clstm.setString(5,String.valueOf(usu.getTipo()));
+            clstm.setString(6,String.valueOf(usu.getTipojefe()));
+            clstm.setFloat(7,usu.getSalario());
+            clstm.setFloat(8,usu.getComision());
+            clstm.setInt(9,usu.getId());
+            clstm.execute();
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
+    public void Etrabajador(int idt)
+    {
+        conexion = new Conexion();
+        try {
+            clstm = conexion.getConexion().prepareCall("{ call a_E_trabajador(?) }");
+            clstm.setInt(1, idt);
+            
+            
+            
+            clstm.execute();
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    /**
+     * @return the fechaInicio
+     */
+    public Date getFechaInicio() {
+        return fechaInicio;
+    }
+
+    /**
+     * @param fechaInicio the fechaInicio to set
+     */
+    public void setFechaInicio(Date fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    /**
+     * @return the password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * @param password the password to set
+     */
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    /**
+     * @return the tipo
+     */
+    public char getTipo() {
+        return tipo;
+    }
+
+    /**
+     * @param tipo the tipo to set
+     */
+    public void setTipo(char tipo) {
+        this.tipo = tipo;
+    }
+
+    /**
+     * @return the tipojefe
+     */
+    public char getTipojefe() {
+        return tipojefe;
+    }
+
+    /**
+     * @param tipojefe the tipojefe to set
+     */
+    public void setTipojefe(char tipojefe) {
+        this.tipojefe = tipojefe;
+    }
+
+    /**
+     * @return the salario
+     */
+    public float getSalario() {
+        return salario;
+    }
+
+    /**
+     * @param salario the salario to set
+     */
+    public void setSalario(float salario) {
+        this.salario = salario;
+    }
+
+    /**
+     * @return the comision
+     */
+    public float getComision() {
+        return comision;
+    }
+
+    /**
+     * @param comision the comision to set
+     */
+    public void setComision(float comision) {
+        this.comision = comision;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    /**
+     * @param nombre the nombre to set
+     */
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    /**
+     * @param rol the rol to set
+     */
+    public void setRol(char rol) {
+        this.rol = rol;
+    }
+
+    /**
+     * @param correo the correo to set
+     */
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 }
